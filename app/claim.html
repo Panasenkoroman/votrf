@@ -1,0 +1,3045 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>progect</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="stylesheet" href="css/jquery.scrollbar.css">
+
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+
+
+<div class="preloader">
+    <div class="lds-spinner">
+      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    </div>
+  </div>
+
+	<header class="header claim">
+		<div class="container-fluid">
+			<div class="row align-items-center justify-content-around">
+				<a href="#" class="header__logo col-2 col-md-2">
+					<img src="images/logo.svg" alt="">
+				</a>
+				<a href="login.html" class="col-2 col-sm-1 accont-icon align-items-right open-popup ml-auto">
+					<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 3C11.66 3 13 4.34 13 6C13 7.66 11.66 9 10 9C8.34 9 7 7.66 7 6C7 4.34 8.34 3 10 3ZM10 17.2C7.5 17.2 5.29 15.92 4 13.98C4.03 11.99 8 10.9 10 10.9C11.99 10.9 15.97 11.99 16 13.98C14.71 15.92 12.5 17.2 10 17.2Z" fill="#2181F1"/>
+					</svg>
+				</a>
+				<div class="header__text col-auto col-lg-auto order-3 order-lg-2">
+					<div class="header__text-btn">
+						<span></span>
+					</div>
+					<p class="header__text-text">
+						Формирование претензии
+					</p>
+				</div>
+				<div class="col account ml-auto order-2 order-lg-3">
+					<img src="images/content/account-foto.jpg" alt="">
+					<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.41 0.589844L6 5.16984L10.59 0.589844L12 1.99984L6 7.99984L0 1.99984L1.41 0.589844Z" fill="#2181F1"/>
+					</svg>
+					<div class="account__drop-down">
+						<ul>
+							<li>
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M7.99967 1.33301C4.31967 1.33301 1.33301 4.31967 1.33301 7.99967C1.33301 11.6797 4.31967 14.6663 7.99967 14.6663C11.6797 14.6663 14.6663 11.6797 14.6663 7.99967C14.6663 4.31967 11.6797 1.33301 7.99967 1.33301ZM7.99967 3.33301C9.10634 3.33301 9.99967 4.22634 9.99967 5.33301C9.99967 6.43967 9.10634 7.33301 7.99967 7.33301C6.89301 7.33301 5.99967 6.43967 5.99967 5.33301C5.99967 4.22634 6.89301 3.33301 7.99967 3.33301ZM7.99967 12.7997C6.33301 12.7997 4.85967 11.9463 3.99967 10.653C4.01967 9.32634 6.66634 8.59967 7.99967 8.59967C9.32634 8.59967 11.9797 9.32634 11.9997 10.653C11.1397 11.9463 9.66634 12.7997 7.99967 12.7997Z" fill="white"/>
+								</svg>
+								<a href="#">
+									Личный кабинет
+								</a>
+							</li>
+							<li>
+								<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M14 12.5V13.1667C14 13.9 13.4 14.5 12.6667 14.5H3.33333C2.59333 14.5 2 13.9 2 13.1667V3.83333C2 3.1 2.59333 2.5 3.33333 2.5H12.6667C13.4 2.5 14 3.1 14 3.83333V4.5H8C7.26 4.5 6.66667 5.1 6.66667 5.83333V11.1667C6.66667 11.9 7.26 12.5 8 12.5H14ZM8 11.1667H14.6667V5.83333H8V11.1667ZM10.6667 9.5C10.1133 9.5 9.66667 9.05333 9.66667 8.5C9.66667 7.94667 10.1133 7.5 10.6667 7.5C11.22 7.5 11.6667 7.94667 11.6667 8.5C11.6667 9.05333 11.22 9.5 10.6667 9.5Z" fill="#ffffff"/>
+								</svg>
+
+								<a href="#">
+									купить страховку
+								</a>
+							</li>
+							<li>
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4.66699 11.9997C3.93366 11.9997 3.34033 12.5997 3.34033 13.333C3.34033 14.0663 3.93366 14.6663 4.66699 14.6663C5.40033 14.6663 6.00033 14.0663 6.00033 13.333C6.00033 12.5997 5.40033 11.9997 4.66699 11.9997ZM0.666992 1.33301V2.66634H2.00033L4.40033 7.72634L3.50033 9.35967C3.39366 9.54634 3.33366 9.76634 3.33366 9.99967C3.33366 10.733 3.93366 11.333 4.66699 11.333H12.667V9.99967H4.94699C4.85366 9.99967 4.78033 9.92634 4.78033 9.83301L4.80032 9.75301L5.40033 8.66634H10.367C10.867 8.66634 11.307 8.39301 11.5337 7.97967L13.9203 3.65301C13.9737 3.55967 14.0003 3.44634 14.0003 3.33301C14.0003 2.96634 13.7003 2.66634 13.3337 2.66634H3.47366L2.84699 1.33301H0.666992ZM11.3337 11.9997C10.6003 11.9997 10.007 12.5997 10.007 13.333C10.007 14.0663 10.6003 14.6663 11.3337 14.6663C12.067 14.6663 12.667 14.0663 12.667 13.333C12.667 12.5997 12.067 11.9997 11.3337 11.9997Z" fill="white"/>
+								</svg>
+
+								<a href="#">
+									купить тур
+								</a>
+							</li>
+							<li>
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0.667039 14.0003H8.66704V15.3337H0.667039V14.0003ZM3.49704 5.38032L5.38371 3.49566L14.8104 12.9237L12.925 14.809L3.49704 5.38032ZM8.21171 0.666992L11.983 4.43766L10.0964 6.32433L6.32704 2.55099L8.21171 0.666992ZM2.55037 6.32366L6.32171 10.095L4.43637 11.9803L0.665039 8.20899L2.55037 6.32366Z" fill="white"/>
+								</svg>
+								<a href="#">
+									цифровой туристический  адвокат
+								</a>
+							</li>
+							<li>
+
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.66656 12.6665H14.3332V13.9999H1.66656V12.6665ZM14.7132 6.42655C14.5732 5.89322 14.0199 5.57322 13.4866 5.71988L9.94656 6.66655L5.34656 2.37988L4.0599 2.71988L6.8199 7.49988L3.50656 8.38655L2.19323 7.35988L1.22656 7.61988L2.4399 9.72655L2.95323 10.6132L4.0199 10.3265L7.5599 9.37988L10.4599 8.60655L13.9999 7.65988C14.5399 7.50655 14.8532 6.95988 14.7132 6.42655Z" fill="white"/>
+								</svg>
+								<a href="#">
+									ответственный путешественник
+								</a>
+							</li>
+							<li>
+
+								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M6.72667 10.3933L7.66667 11.3333L11 8L7.66667 4.66667L6.72667 5.60667L8.44667 7.33333H2V8.66667H8.44667L6.72667 10.3933ZM12.6667 2H3.33333C2.59333 2 2 2.6 2 3.33333V6H3.33333V3.33333H12.6667V12.6667H3.33333V10H2V12.6667C2 13.4 2.59333 14 3.33333 14H12.6667C13.4 14 14 13.4 14 12.6667V3.33333C14 2.6 13.4 2 12.6667 2Z" fill="white"/>
+								</svg>
+
+								<a href="#">
+									выйти
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="progres">
+				<a class="progres__item link-1" href="#anchor-link-1" ></a>
+				<a class="progres__item link-2" href="#anchor-link-2" ></a>
+				<a class="progres__item link-3" href="#anchor-link-3" ></a>
+				<a class="progres__item link-4" href="#anchor-link-4"></a>
+				<a class="progres__item link-5" href="#anchor-link-5" ></a>
+				<a class="progres__item link-6" href="#anchor-link-6" ></a>
+				<a class="progres__item link-7" href="#anchor-link-7" ></a>
+				<a class="progres__item link-8" href="#anchor-link-8" ></a>
+				<a class="progres__item link-9" href="#anchor-link-9" ></a>
+				<a class="progres__item link-10" href="#anchor-link-10"></a>
+				<a class="progres__item link-11" href="#anchor-link-11"></a>
+			</div>
+		</div>
+	</header> 
+
+
+	<div class="claim">
+		<div class="container-fluid row">
+
+			<div class="col left-site">
+				<img class="close-site" src="images/icons/close-site.png" alt="">
+				<div class="left-site-wrap fixed">
+					<div class="left-site__menu" id="box21">
+						<ul>
+							<li>
+								<svg class="left-site__menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3 13H11V3H3V13ZM3 21H11V15H3V21ZM13 21H21V11H13V21ZM13 3V9H21V3H13Z"/>
+								</svg>
+								<a href="#">
+									Главная
+								</a>
+							</li>
+							<li class="left-site__drop">
+								<svg class="left-site__menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4 10V17H7V10H4ZM10 10V17H13V10H10ZM2 22H21V19H2V22ZM16 10V17H19V10H16ZM11.5 1L2 6V8H21V6L11.5 1Z"/>
+								</svg>
+								<a href="#">
+									Цифровой адвокат
+								</a>
+								<ul class="left-site__drop-down">
+									<li>
+										<svg class="left-site__menu-icon" width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M0 10L5 5L0 0V10Z" fill="white"/>
+										</svg>
+										<a href="#">
+											Список обращений
+										</a></li>
+										<li>
+											<svg class="left-site__menu-icon" width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 10L5 5L0 0V10Z" fill="white"/>
+											</svg>
+											<a href="#">
+												Формирование претензии
+											</a></li>
+										</ul>
+									</li>
+									<li>
+										<svg class="left-site__menu-icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M21.5 16.5V14.5L13.5 9.5V4C13.5 3.17 12.83 2.5 12 2.5C11.17 2.5 10.5 3.17 10.5 4V9.5L2.5 14.5V16.5L10.5 14V19.5L8.5 21V22.5L12 21.5L15.5 22.5V21L13.5 19.5V14L21.5 16.5Z" />
+										</svg>
+										<a href="#">
+											Ответственный путешественник
+										</a>
+									</li>
+									<li>
+										<svg class="left-site__menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M10 20H14V4H10V20ZM4 20H8V12H4V20ZM16 9V20H20V9H16Z" />
+										</svg>
+										<a href="#">
+											Национальный туристический рейтинг
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="left-site__info">
+								<ul>
+									<li>
+										<svg class="left-site__menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 5C13.66 5 15 6.34 15 8C15 9.66 13.66 11 12 11C10.34 11 9 9.66 9 8C9 6.34 10.34 5 12 5ZM12 19.2C9.5 19.2 7.29 17.92 6 15.98C6.03 13.99 10 12.9 12 12.9C13.99 12.9 17.97 13.99 18 15.98C16.71 17.92 14.5 19.2 12 19.2Z" fill="#2AADEF"/>
+										</svg>
+										<a href="#">
+											Аккаунт
+										</a>
+									</li>
+									<li>
+										<svg class="left-site__menu-icon" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M12 2.00195C6.48 2.00195 2 6.48195 2 12.002C2 17.522 6.48 22.002 12 22.002C17.52 22.002 22 17.522 22 12.002C22 6.48195 17.52 2.00195 12 2.00195ZM13 19.002H11V17.002H13V19.002ZM15.07 11.252L14.17 12.172C13.45 12.902 13 13.502 13 15.002H11V14.502C11 13.402 11.45 12.402 12.17 11.672L13.41 10.412C13.78 10.052 14 9.55195 14 9.00195C14 7.90195 13.1 7.00195 12 7.00195C10.9 7.00195 10 7.90195 10 9.00195H8C8 6.79195 9.79 5.00195 12 5.00195C14.21 5.00195 16 6.79195 16 9.00195C16 9.88195 15.64 10.682 15.07 11.252Z" fill="#2AADEF"/>
+										</svg>
+										<a href="#">
+											Помощь
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="left-site__social social">
+							<a href="#"><img src="images/icons/social-vk.png" alt=""></a>
+							<a href="#"><img src="images/icons/social-facebook.png" alt=""></a>
+							<a href="#"><img src="images/icons/social-twit.png" alt=""></a>
+							<a href="#"><img src="images/icons/social-youtube.png" alt=""></a>
+						</div>
+					</div>
+					<div class="col center-site" id="box">
+						 
+						<div class="content-box content-box--errors">
+							<h5 class="content-title">
+								<svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M0 19H22L11 0L0 19ZM12 16H10V14H12V16ZM12 12H10V8H12V12Z" fill="#E41616"/>
+								</svg>
+								Перечень ошибок для исправления
+							</h5>
+							<div class="form-item">
+								<div class="form-item__erors-box">
+									<div class="erors-box--title">
+										Раздел “Пропишите ваши персональные данные”
+									</div>
+									<ul class="erors-box--list">
+										<li>
+										<span>— </span>Поле "Период путешествия с" обязательно для заполнения.
+										</li>
+										<li>
+											<span>— </span>Поле "Период путешествия по" обязательно для заполнения.
+										</li>
+										<li>
+											<span>— </span>Поле "Страна путешествия" обязательно для заполнения.
+										</li>
+										<li>
+											<span>— </span>Поле "Общая стоимость по договору " обязательно для заполнения.
+										</li>
+									</ul>
+								</div>
+								<div class="form-item__erors-box">
+									<div class="erors-box--title">
+										Раздел “Опишите ваши убытки”
+									</div>
+									<ul class="erors-box--list">
+										<li>
+											<span>— </span>Должны быть приложены копии документов
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="content-box" id="anchor-link-1">
+							<h5 class="content-title">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M19 3H5C3.9 3 3 3.9 3 5V12C3 13.1 3.9 14 5 14H19C20.1 14 21 13.1 21 12V5C21 3.9 20.1 3 19 3ZM19 9H15C15 10.62 13.62 12 12 12C10.38 12 9 10.62 9 9H5V5H19V9ZM15 16H21V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V16H9C9 17.66 10.34 19 12 19C13.66 19 15 17.66 15 16Z" fill="#2181F1"/>
+								</svg>
+								Определение основания заявления
+							</h5>
+							<div class="form-item">
+								<div class="claim-box">
+									<p class="input-name">
+										Выберите основание
+									</p>
+									<div class="hint">
+										<div class="hint-box">
+											Ошибка! Необходимо внести корректный тип файлов
+										</div>
+									</div> 
+									<select class="claim-select">
+										<option>Тур не состоялся</option>
+										<option>Качество</option>
+										<option>s</option>
+									</select>
+								</div>
+
+								<p class="form-sabtitle form-sabtitle-icon">
+									<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M18 0H2C0.9 0 0.00999999 0.9 0.00999999 2L0 20L4 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM11 12H9V10H11V12ZM11 8H9V4H11V8Z" fill="#2181F1"/>
+									</svg>
+									Обратите внимание, что в данном случае сумма покрытия не будет превышать 20 000.00 ₽ 
+								</p>
+							</div>
+						</div>
+						<div class="content-box" id="anchor-link-2">
+							<h5 class="content-title">
+								<svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16 2H11.82C11.4 0.84 10.3 0 9 0C7.7 0 6.6 0.84 6.18 2H2C0.9 2 0 2.9 0 4V18C0 19.1 0.9 20 2 20H16C17.1 20 18 19.1 18 18V4C18 2.9 17.1 2 16 2ZM9 2C9.55 2 10 2.45 10 3C10 3.55 9.55 4 9 4C8.45 4 8 3.55 8 3C8 2.45 8.45 2 9 2ZM9 6C10.66 6 12 7.34 12 9C12 10.66 10.66 12 9 12C7.34 12 6 10.66 6 9C6 7.34 7.34 6 9 6ZM15 18H3V16.6C3 14.6 7 13.5 9 13.5C11 13.5 15 14.6 15 16.6V18Z" fill="#2181F1"/>
+								</svg>
+								Пропишите ваши персональные данные
+							</h5>
+
+							<div class="participantss">
+								<div class="participantss__item">
+									<div class="participantss__title">
+										Участник поездки №1
+									</div>
+									<div class="form-item">
+										<div class="row form-item-row justify-content-between">
+											<div class="col col-12 col-md-6">
+												<div class="claim-box">
+													<p class="input-name">
+														Фамилия
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" class="claim-input" placeholder="Карпов">
+												</div>
+												<div class="claim-box">
+													<p class="input-name">
+														Имя
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" class="claim-input" placeholder="Виталий">
+												</div>
+												<div class="claim-box">
+													<p class="input-name">
+														Отчество
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" class="claim-input" placeholder="Валентинович">
+												</div>
+												<div class="row">
+													<div class="col-md-6 col-12 pl-md-0">
+														<div class="claim-box">
+															<p class="input-name">
+																Дата рождения
+															</p>
+															<div class="hint">
+																<div class="hint-box">
+																	Ошибка! Необходимо внести корректный тип файлов
+																</div>
+															</div> 
+															<input class="claim-input claim-input-date w-100" id="date" type="text" max="9999-01-01" value="1970-01-20">
+														</div>
+													</div>
+													<div class="col-md-6 col-12">
+
+													</div>
+												</div>
+
+											</div>
+											<div class="col col-12 col-md-6">
+												<div class="claim-box">
+													<p class="input-name">
+														Email
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="email" class="claim-input" placeholder="mail@mail.com">
+												</div>
+
+												<div class="claim-box error">
+													<p class="input-name">
+														Телефон
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="tel" class="claim-input " placeholder="+ 7 (ХХХ) ХХХ ХХХХ">
+												</div>
+
+												<div class="row">
+													<div class="col col-12 col-12 col-md-6">
+														<div class="claim-box">
+															<p class="input-name">
+																Номер членского билета
+															</p>
+															<div class="hint">
+																<div class="hint-box">
+																	Ошибка! Необходимо внести корректный тип файлов
+																</div>
+															</div> 
+															<input type="text" class="claim-input" placeholder="10000018">
+														</div>
+													</div>
+													<div class="col col-12 col-12 col-md-6 pl-md-0">
+
+													</div>
+												</div>
+												<div class="row">
+													<div class="col col-12 col-12 col-md-6">
+														<div class="row cheked">
+															<label class="container_check ">
+																<input class='checkbox' type="checkbox" name="vip">
+																<span class="checkmark"></span>
+																<p class="col pl-15 pl-sm-0 input-name">
+																	Регистрация на портале ВОТ отсутствует
+																</p>
+															</label>
+														</div>
+													</div>
+													<div class="col col-12 col-12 col-md-6 pl-md-0">
+														<div class="row cheked">
+															<label class="container_check ">
+																<input class='checkbox' type="checkbox" name="vip">
+																<span class="checkmark"></span>
+																<p class="col pl-15 pl-sm-0 input-name">
+																	Согласен на получение приглашения в ВОТ (email + sms)
+																</p>
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row justify-content-between">
+											<div class="col-12 pl-md-0 pr-md-0">
+												<div class="claim-box">
+													<p class="input-name" >
+														Документ, удостоверяющий личность, который был зафиксирован в договоре
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<select class="claim-select">
+														<option>Внутренний паспорт</option>
+														<option>Заграничный паспорт</option>
+														<option>Св-во о рождении</option>
+													</select>
+												</div>
+											</div>
+											<div class="col col-12 pl-md-0   pr-md-0">
+												<div class="row">
+													<div class="col col-12 col-md-2">
+														<div class="claim-box">
+															<p class="input-name">
+																Серия
+															</p>
+															<div class="hint">
+																<div class="hint-box">
+																	Ошибка! Необходимо внести корректный тип файлов
+																</div>
+															</div> 
+															<input type="text" class="claim-input" placeholder="1122">
+														</div>
+													</div>
+													<div class="col col-12 col-md-2">
+														<div class="claim-box">
+															<p class="input-name">
+																Номер
+															</p>
+															<div class="hint">
+																<div class="hint-box">
+																	Ошибка! Необходимо внести корректный тип файлов
+																</div>
+															</div> 
+															<input type="text" class="claim-input" placeholder="112233">
+														</div>
+													</div>
+													<div class="col col-12 col-md-3">
+														<div class="claim-box">
+															<p class="input-name">
+																Дата
+															</p>
+															<div class="hint">
+																<div class="hint-box">
+																	Ошибка! Необходимо внести корректный тип файлов
+																</div>
+															</div> 
+															<input class="claim-input claim-input-date" type="text" max="9999-01-01" value="1970-01-20">
+														</div>
+													</div>
+													<div class="col col-12 col-md-5">
+														<div class="claim-box">
+															<p class="input-name">
+																Кем выдан
+															</p>
+															<div class="hint">
+																<div class="hint-box">
+																	Ошибка! Необходимо внести корректный тип файлов
+																</div>
+															</div> 
+															<input type="text" class="claim-input" placeholder="Введите название подразделения">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row border-bottom">
+											<div class="col col-12 col-md-2">
+												<div class="claim-box">
+													<p class="input-name">
+														Код подразделения
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" class="claim-input" placeholder="1122">
+												</div>
+											</div>
+											<div class="col col-12 col-md-10 w-100">
+												<div class="claim-box">
+													<p class="input-name">
+														Адрес регистрации
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" class="claim-input" placeholder="г Москва, Кутузовский пр-кт, д. 36, стр. 1, кв. 120">
+												</div>
+											</div>
+										</div>
+										<div class="border-bottom row">
+											<div class="col-md-6 col-12 col">
+												<div class="claim-box claim-box-file error">
+													<div class="box-hint">
+														<p class="input-name help-icon">
+															<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9.75 12.75H8.25V8.25H9.75V12.75ZM9.75 6.75H8.25V5.25H9.75V6.75Z" />
+															</svg>
+															Загрузите копию удостоверяющих документов
+														</p>
+														<div class="hint">
+															<div class="hint-box">
+																Возможные форматы файлов: .txt .png .jpeg .bpm .tiff .doc .rtf .zip .pdf .docx .xlsx .rar .djv
+															</div>
+														</div>
+													</div>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input  type="file" class="claim-input claim-file" placeholder="Выбрать..." data-placeholder="Выбрать..." data-browse="Загрузить">
+												</div>
+											</div>
+											<div class="col col-12 col-md-6">
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12 col-md-6 col">
+
+											</div>
+											<div class="col-12 col-md-6 col pt-35 pl-15 pl-md-20">
+												<div class="btn big-btn btn-gray fw-500 prelod">
+													Удалить участника
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="participantss__item active">
+									<div class="participantss__title">
+										Участник поездки №2
+									</div>
+									<div class="form-item">
+										<div class="row form-item-row justify-content-between">
+											<div class="col col-12 col-md-6">
+												<div class="claim-box">
+													<p class="input-name">
+														Фамилия
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" class="claim-input" placeholder="Карпов">
+												</div>
+												<div class="claim-box">
+													<p class="input-name">
+														Имя
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" class="claim-input" placeholder="Виталий">
+												</div>
+												<div class="claim-box">
+													<p class="input-name">
+														Отчество
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" class="claim-input" placeholder="Валентинович">
+												</div>
+												
+											</div>
+											<div class="col col-12 col-md-6">
+												<div class="claim-box">
+													<p class="input-name">
+														Email
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="email" class="claim-input" placeholder="mail@mail.com">
+												</div>
+
+												<div class="claim-box error">
+													<p class="input-name">
+														Телефон
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="tel" class="claim-input " placeholder="+ 7 (ХХХ) ХХХ ХХХХ">
+												</div>
+
+												<div class="row">
+													<div class="col col-12 col-12 col-md-6">
+														<div class="claim-box">
+															<p class="input-name">
+																Номер членского билета
+															</p>
+															<div class="hint">
+																<div class="hint-box">
+																	Ошибка! Необходимо внести корректный тип файлов
+																</div>
+															</div> 
+															<input type="text" class="claim-input" placeholder="10000018">
+														</div>
+													</div>
+													<div class="col col-12 col-12 col-md-6 pl-md-0">
+
+													</div>
+												</div>
+												
+											</div>
+											<div class="col-12 pl-md-0 pr-md-0">
+												<div class="row">
+												<div class="col-md-6 pl-md-0">
+													<div class="row">
+													<div class="col-md-6 col-12 pl-md-0">
+														<div class="claim-box mb--md-0">
+															<p class="input-name">
+																Дата рождения
+															</p>
+															<div class="hint">
+																<div class="hint-box">
+																	Ошибка! Необходимо внести корректный тип файлов
+																</div>
+															</div> 
+															<input class="claim-input claim-input-date w-100" id="date" type="text" max="9999-01-01" value="1970-01-20">
+														</div>
+													</div>
+													<div class="col-md-6 col-12">
+													</div>
+												</div>
+												</div>
+												<div class="col-md-6 align-self-end pt-md-15">
+													<div class="row">
+													<div class="col col-12 col-12 col-md-6 pr-md-0">
+														<div class="row cheked">
+															<label class="container_check ">
+																<input class='checkbox' type="checkbox" name="vip">
+																<span class="checkmark"></span>
+																<p class="col pl-15 pl-sm-0 input-name">
+																	Регистрация на портале ВОТ отсутствует
+																</p>
+															</label>
+														</div>
+													</div>
+													<div class="col col-12 col-12 col-md-6 pr-md-0">
+														<div class="row cheked">
+															<label class="container_check ">
+																<input class='checkbox' type="checkbox" name="vip">
+																<span class="checkmark"></span>
+																<p class="col pl-15 pl-sm-0 input-name">
+																	Согласен на получение приглашения в ВОТ (email + sms)
+																</p>
+															</label>
+														</div>
+													</div>
+												</div>
+												</div>
+											</div>
+											</div>
+											
+										</div>
+										<div class="row justify-content-between">
+											<div class="col-12 pl-md-0 pr-md-0">
+												<div class="claim-box">
+													<p class="input-name" >
+														Документ, удостоверяющий личность, который был зафиксирован в договоре
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<select class="claim-select">
+														<option>Внутренний паспорт</option>
+														<option>Заграничный паспорт</option>
+														<option>Св-во о рождении</option>
+													</select>
+												</div>
+											</div>
+											<div class="col col-12 pl-md-0   pr-md-0">
+												<div class="row">
+													<div class="col col-12 col-md-2">
+														<div class="claim-box">
+															<p class="input-name">
+																Серия
+															</p>
+															<div class="hint">
+																<div class="hint-box">
+																	Ошибка! Необходимо внести корректный тип файлов
+																</div>
+															</div> 
+															<input type="text" class="claim-input" placeholder="1122">
+														</div>
+													</div>
+													<div class="col col-12 col-md-2">
+														<div class="claim-box">
+															<p class="input-name">
+																Номер
+															</p>
+															<div class="hint">
+																<div class="hint-box">
+																	Ошибка! Необходимо внести корректный тип файлов
+																</div>
+															</div> 
+															<input type="text" class="claim-input" placeholder="112233">
+														</div>
+													</div>
+													<div class="col col-12 col-md-3">
+														<div class="claim-box">
+															<p class="input-name">
+																Дата
+															</p>
+															<div class="hint">
+																<div class="hint-box">
+																	Ошибка! Необходимо внести корректный тип файлов
+																</div>
+															</div> 
+															<input class="claim-input claim-input-date" type="text" max="9999-01-01" value="1970-01-20">
+														</div>
+													</div>
+													<div class="col col-12 col-md-5">
+														<div class="claim-box">
+															<p class="input-name">
+																Кем выдан
+															</p>
+															<div class="hint">
+																<div class="hint-box">
+																	Ошибка! Необходимо внести корректный тип файлов
+																</div>
+															</div> 
+															<input type="text" class="claim-input" placeholder="Введите название подразделения">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row border-bottom">
+											<div class="col col-12 col-md-2">
+												<div class="claim-box">
+													<p class="input-name">
+														Код подразделения
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" class="claim-input" placeholder="1122">
+												</div>
+											</div>
+											<div class="col col-12 col-md-10 w-100">
+												<div class="claim-box">
+													<p class="input-name">
+														Адрес регистрации
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" class="claim-input" placeholder="г Москва, Кутузовский пр-кт, д. 36, стр. 1, кв. 120">
+												</div>
+											</div>
+										</div>
+										<div class="border-bottom row">
+											<div class="col-md-6 col-12 col">
+												<div class="claim-box claim-box-file error">
+													<div class="box-hint">
+														<p class="input-name help-icon">
+															<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9.75 12.75H8.25V8.25H9.75V12.75ZM9.75 6.75H8.25V5.25H9.75V6.75Z" />
+															</svg>
+															Загрузите копию удостоверяющих документов
+														</p>
+														<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													</div>
+													
+													<input  type="file" class="claim-input claim-file" placeholder="Выбрать..." data-placeholder="Выбрать..." data-browse="Загрузить">
+												</div>
+											</div>
+											<div class="col col-12 col-md-6">
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12 col-md-6 col">
+
+											</div>
+											<div class="col-12 col-md-6 col pt-35 pl-15 pl-md-20">
+												<div class="btn big-btn btn-gray fw-500">
+													Удалить участника
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="row justify-content-between">
+							<div class="col col-12 col-md-6"></div>
+							<div class="col col-12 col-md-4">
+								<a href="#anchor-link-2" data-target="anchor" class="form-btn btn btn-blue big-btn btn-blue-2">
+									Добавить участника поездки
+								</a>
+							</div>
+						</div>
+						<div class="content-box" id="anchor-link-3">
+							<h5 class="content-title">
+								<svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.49984 16.0003H20.4998V18.0003H1.49984V16.0003ZM21.0698 6.64031C20.8598 5.84031 20.0298 5.36031 19.2298 5.58031L13.9198 7.00031L7.01984 0.570312L5.08984 1.08031L9.22984 8.25031L4.25984 9.58031L2.28984 8.04031L0.839844 8.43031L2.65984 11.5903L3.42984 12.9203L5.02984 12.4903L10.3398 11.0703L14.6898 9.91031L19.9998 8.49031C20.8098 8.26031 21.2798 7.44031 21.0698 6.64031Z" fill="#2181F1"/>
+								</svg>
+								Укажите данные о несостоявшейся поездке
+							</h5>
+							<div class="form-item">
+								<div class="row justify-content-between">
+									<div class="col col-12 col-md-6">
+										<div class="claim-box">
+											<p class="input-name">
+												Страна путешествия
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input type="text" class="claim-input" placeholder="Канада">
+										</div>
+									</div>
+									<div class="col col-12 col-md-6">
+										<div class="row col-data">
+											<div class="col col-12 col-md-6">
+												<div class="claim-box">
+													<p class="input-name">
+														Период путешествия:
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" max="9999-01-01" class="w-100 claim-input claim-input-date " value="2019-11-20">
+												</div>
+											</div>
+											<div class="col col-12 col-md-6">
+												<div class="claim-box">
+													<p class="input-name opaciti">
+														Период путешествия по:
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" max="9999-01-01" class="w-100 claim-input claim-input-date " value="2019-11-30">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row  border-bottom">
+									<div class="col-12 col-md-6 pl-md-0">
+										<div class="claim-box">
+											<p class="input-name">
+												Общая стоимость тура (рублей)
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input type="text" class="claim-input " placeholder="111 111.00 ₽ ">
+										</div>
+									</div>
+									<div class="col-12 col-md-6"></div>
+								</div>
+								<div class="row">
+									<div class="col-12 pl-md-0 pr-md-0">
+										<div class="claim-box">
+											<p class="input-name">
+												С кем был заключен договор
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<div class="tab__wrap">
+												<div class="claim-input tab-claim-input">Турагент</div>
+												<div class="tab__drop-down">
+													<div class="tab__drop-down-value" data-id="10">
+														Туроператор
+													</div>
+													<div class="tab__drop-down-value" data-id="11">
+														Турагент
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab_content form-tab_content">
+									<div class="tab-item" data-item-id="10">
+										<div class="claim-box">
+											<p class="input-name">
+												Наименование туроператора
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input type="text" class="claim-input" placeholder="1122">
+										</div>
+										<div class="row justify-content-between border-bottom">
+											<div class="col col-12 col-md-6">
+												<div class="row">
+													<div class="col col-12 col-md-6">
+														<div class="claim-box">
+															<p class="input-name">
+																ИНН
+															</p>
+															<div class="hint">
+																<div class="hint-box">
+																	Ошибка! Необходимо внести корректный тип файлов
+																</div>
+															</div> 
+															<input type="text" class="claim-input" placeholder="77111222333">
+														</div>
+													</div>
+													<div class="col col-12 col-md-6">
+														<div class="claim-box">
+															<p class="input-name">
+																ОГРН
+															</p>
+															<div class="hint">
+																<div class="hint-box">
+																	Ошибка! Необходимо внести корректный тип файлов
+																</div>
+															</div> 
+															<input type="text" class="claim-input" placeholder="3344455000">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col col-12 col-md-6 pr-md-0">
+												<div class="row">
+													<div class="col col-12 col-md-6">
+														<div class="claim-box">
+															<p class="input-name">
+																Номер договора
+															</p>
+															<div class="hint">
+																<div class="hint-box">
+																	Ошибка! Необходимо внести корректный тип файлов
+																</div>
+															</div> 
+															<input type="text" class="claim-input" placeholder="77111222333">
+														</div>
+													</div>
+													<div class="col col-12 col-md-6 pr-md-0">
+														<div class="claim-box">
+															<p class="input-name">
+																Дата подписания договора
+															</p>
+															<div class="hint">
+																<div class="hint-box">
+																	Ошибка! Необходимо внести корректный тип файлов
+																</div>
+															</div> 
+															<input type="text" max="9999-01-01" class="claim-input claim-input-date" value="2019-11-20">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6 col-12 pl-md-0">
+												<div class="claim-box">
+													<p class="input-name">
+														Номер брони
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" class="claim-input " placeholder="77111222333">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12 pl-md-0 pr-md-0">
+												<p class="input-name">
+													Наименование туроператора
+												</p>
+												<div class="claim-search--wrap">
+												<div class="claim-search__wrapper">
+													<input type="text" class="claim-input claim-search claim-input--search" value="" placeholder="Введите название отеля">
+													<div class="claim-search__results-found">
+														1
+													</div>
+												</div>
+												<ul class="claim-search__drop-down">
+													<li class="claim-search__value">
+														<div > 
+															<div class="claim-search__box">
+																<div class="claim-search__box--line claim-search__box--title"><span>ООО "Элиса"</span></div>
+																<div class="claim-search__box--line">
+																	<span>Юр. адрес: </span> Москва, 112233, Кутузовский проспект, д. 36, стр. 3, офис 102
+																</div>
+																<div class="claim-search__box--line">
+																	<span>ИНН </span>7702404575
+																	<span> ОГРН </span>1167746742030
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+												</div>
+											</div>
+										</div> 
+									</div>
+									<div class="tab-item active-tab" data-item-id="11">
+										<div class="claim-box">
+											<p class="input-name">
+												Наименование турагента
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input type="text" class="claim-input" placeholder="1122">
+										</div>
+										<div class="row justify-content-between border-bottom">
+											<div class="col col-12 col-md-6">
+												<div class="row">
+													<div class="col col-12 col-md-6">
+														<div class="claim-box">
+															<p class="input-name">
+																ИНН
+															</p>
+															<div class="hint">
+																<div class="hint-box">
+																	Ошибка! Необходимо внести корректный тип файлов
+																</div>
+															</div> 
+															<input type="text" class="claim-input" placeholder="77111222333">
+														</div>
+													</div>
+													<div class="col col-12 col-md-6">
+														<div class="claim-box">
+															<p class="input-name">
+																ОГРН
+															</p>
+															<div class="hint">
+																<div class="hint-box">
+																	Ошибка! Необходимо внести корректный тип файлов
+																</div>
+															</div> 
+															<input type="text" class="claim-input" placeholder="3344455000">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col col-12 col-md-6 pr-md-0">
+												<div class="row">
+													<div class="col col-12 col-md-6">
+														<div class="claim-box">
+															<p class="input-name">
+																Номер договора
+															</p>
+															<div class="hint">
+																<div class="hint-box">
+																	Ошибка! Необходимо внести корректный тип файлов
+																</div>
+															</div> 
+															<input type="text" class="claim-input" placeholder="77111222333">
+														</div>
+													</div>
+													<div class="col col-12 col-md-6 pr-md-0">
+														<div class="claim-box">
+															<p class="input-name">
+																Дата подписания договора
+															</p>
+															<div class="hint">
+																<div class="hint-box">
+																	Ошибка! Необходимо внести корректный тип файлов
+																</div>
+															</div> 
+															<input type="text" max="9999-01-01" class="claim-input claim-input-date" value="2019-11-20">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-6 col-12 pl-md-0">
+												<div class="claim-box">
+													<p class="input-name">
+														Номер брони
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" class="claim-input " placeholder="77111222333">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12 pl-md-0 pr-md-0">
+												<p class="input-name">
+													Наименование турагента
+												</p>
+												<div class="claim-search--wrap">
+												<div class="claim-search__wrapper">
+													<input type="text" class="claim-input claim-search claim-input--search" value="" placeholder="Введите название отеля">
+													<div class="claim-search__results-found">
+														1
+													</div>
+												</div>
+												<ul class="claim-search__drop-down">
+													<li class="claim-search__value">
+														<div > 
+															<div class="claim-search__box">
+																<div class="claim-search__box--line claim-search__box--title"><span>ООО "Элиса"</span></div>
+																<div class="claim-search__box--line">
+																	<span>Юр. адрес: </span> Москва, 112233, Кутузовский проспект, д. 36, стр. 3, офис 102
+																</div>
+																<div class="claim-search__box--line">
+																	<span>ИНН </span>7702404575
+																	<span> ОГРН </span>1167746742030
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+												</div>
+											</div>
+										</div> 
+									</div>
+								</div>
+								<div class="row justify-content-betwee">
+									<div class="col col-12 col-sm-7 pl-md-0">
+										<div class="document__wrapper border">
+											<p class="input-name contract">
+												<svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M10 0H2C0.9 0 0.0100002 0.9 0.0100002 2L0 18C0 19.1 0.89 20 1.99 20H14C15.1 20 16 19.1 16 18V6L10 0ZM12 16H4V14H12V16ZM12 12H4V10H12V12ZM9 7V1.5L14.5 7H9Z" fill="#2181F1"/>
+												</svg>
+												Договор на оказание услуг в сфере туризма с ком...
+											</p>
+										<div class="document__wrapper-controls">
+											<svg class="ml-auto ok-icon confirmation-icon" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 15.2496V18.9996H3.75L14.81 7.93957L11.06 4.18957L0 15.2496ZM17.71 5.03957C18.1 4.64957 18.1 4.01957 17.71 3.62957L15.37 1.28957C14.98 0.89957 14.35 0.89957 13.96 1.28957L12.13 3.11957L15.88 6.86957L17.71 5.03957Z" fill="#2181F1"/>
+											</svg>
+											<svg class="remove-icon confirmation-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#E41616"/>
+											</svg>
+										</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-12 col">
+										<div class="claim-box">
+											<div class="box-hint">
+												<p class="input-name help-icon">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9.75 12.75H8.25V8.25H9.75V12.75ZM9.75 6.75H8.25V5.25H9.75V6.75Z" fill="#2181F1"/>
+													</svg>
+													Загрузите договор с турагентом
+												</p>
+												<div class="hint">
+													<div class="hint-box">
+														Возможные форматы файлов: .txt .png .jpeg .bpm .tiff .doc .rtf .zip .pdf .docx .xlsx .rar .djv
+													</div>
+												</div>
+											</div>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input  type="file" class="claim-input claim-file" placeholder="Выбрать..." data-placeholder="Выбрать..." data-browse="Загрузить">
+										</div>
+									</div>
+									<div class="col col-12 col-md-6 ">
+									</div>
+								</div>
+							</div>
+						</div> 
+						<div class="content-box" id="anchor-link-4">
+							<h5 class="content-title">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 7V3H2V21H22V7H12ZM6 19H4V17H6V19ZM6 15H4V13H6V15ZM6 11H4V9H6V11ZM6 7H4V5H6V7ZM10 19H8V17H10V19ZM10 15H8V13H10V15ZM10 11H8V9H10V11ZM10 7H8V5H10V7ZM20 19H12V17H14V15H12V13H14V11H12V9H20V19ZM18 11H16V13H18V11ZM18 15H16V17H18V15Z" fill="#2181F1"/>
+								</svg>
+								Укажите данные о несостоявшейся поездке
+							</h5>
+							<div class="form-item">
+								<div class="row border-bottom justify-content-between">
+									<div class="col col-12 col-md-6">
+										<div class="claim-box">
+											<p class="input-name">
+												Страна путешествия
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input type="text" class="claim-input" placeholder="Канада">
+										</div>
+									</div>
+									<div class="col col-12 col-md-6">
+										<div class="row col-data">
+											<div class="col col-12 col-md-6">
+												<div class="claim-box">
+													<p class="input-name">
+														Период путешествия:
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" max="9999-01-01" class="w-100 claim-input claim-input-date " value="2019-11-20">
+												</div>
+											</div>
+											<div class="col col-12 col-md-6">
+												<div class="claim-box">
+													<p class="input-name opaciti">
+														Период путешествия по:
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" max="9999-01-01" class="w-100 claim-input claim-input-date " value="2019-11-30">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-md-6 pl-md-0">
+										<div class="claim-box">
+											<p class="input-name">
+												Общая стоимость тура (рублей)
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input type="text" class="claim-input" placeholder="111 111.00 ₽ ">
+										</div>
+									</div>
+									<div class="col col-12 col-md-6 p-md-0"></div>
+								</div>
+								<div class="row justify-content-between">
+									<div class="col-12 pl-md-0 pr-md-0">
+										<div class="claim-box">
+											<p class="input-name">
+												С кем был заключен договор
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<div class="tab__wrap">
+												<div class="claim-input tab-claim-input">Туроператор</div>
+												<div class="tab__drop-down">
+													<div class="tab__drop-down-value" data-id="12">
+														Туроператор
+													</div>
+													<div class="tab__drop-down-value" data-id="13">
+														Турагент
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tab_content form-tab_content">
+									<div class="tab-item active-tab" data-item-id="12">
+										<div class="row">
+											<div class="col-12 pl-md-0 pr-md-0">
+												<p class="input-name">
+													Наименование Туроператор
+												</p>
+												<div class="claim-search--wrap">
+													<div class="claim-search__wrapper">
+														<input type="text" class="claim-input claim-search claim-input--search" value="" placeholder="Введите название отеля">
+														<div class="claim-search__results-found">
+															1
+														</div>
+													</div>
+													<ul class="claim-search__drop-down">
+														<li class="claim-search__value">
+															<div > 
+																<div class="claim-search__box">
+																	<div class="claim-search__box--line claim-search__box--title"><span>ООО "Элиса"</span></div>
+																	<div class="claim-search__box--line">
+																		<span>Юр. адрес: </span> Москва, 112233, Кутузовский проспект, д. 36, стр. 3, офис 102
+																	</div>
+																	<div class="claim-search__box--line">
+																		<span>ИНН </span>7702404575
+																		<span> ОГРН </span>1167746742030
+																	</div>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-item" data-item-id="13">
+										<div class="row">
+											<div class="col-12 pl-md-0 pr-md-0">
+												<p class="input-name">
+													Наименование турагента
+												</p>
+												<div class="claim-search--wrap">
+													<div class="claim-search__wrapper">
+														<input type="text" class="claim-input claim-search claim-input--search" value="" placeholder="Введите название отеля">
+														<div class="claim-search__results-found">
+															1
+														</div>
+													</div>
+													<ul class="claim-search__drop-down">
+														<li class="claim-search__value">
+															<div > 
+																<div class="claim-search__box">
+																	<div class="claim-search__box--line claim-search__box--title"><span>ООО "Элиса"</span></div>
+																	<div class="claim-search__box--line">
+																		<span>Юр. адрес: </span> Москва, 112233, Кутузовский проспект, д. 36, стр. 3, офис 102
+																	</div>
+																	<div class="claim-search__box--line">
+																		<span>ИНН </span>7702404575
+																		<span> ОГРН </span>1167746742030
+																	</div>
+																</div>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="row justify-content-betwee">
+									<div class="col col-12 col-sm-6 pl-md-0">
+										<div class="document__wrapper">
+											<p class="input-name contract">
+												<svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M10 0H2C0.9 0 0.0100002 0.9 0.0100002 2L0 18C0 19.1 0.89 20 1.99 20H14C15.1 20 16 19.1 16 18V6L10 0ZM12 16H4V14H12V16ZM12 12H4V10H12V12ZM9 7V1.5L14.5 7H9Z" fill="#2181F1"/>
+												</svg>
+												Договор на оказание услуг в сфере туризма с ком...
+											</p>
+
+											<svg class="ml-auto ok-icon confirmation-icon" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M0 15.2496V18.9996H3.75L14.81 7.93957L11.06 4.18957L0 15.2496ZM17.71 5.03957C18.1 4.64957 18.1 4.01957 17.71 3.62957L15.37 1.28957C14.98 0.89957 14.35 0.89957 13.96 1.28957L12.13 3.11957L15.88 6.86957L17.71 5.03957Z" fill="#2181F1"/>
+											</svg>
+											<svg class="remove-icon confirmation-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#E41616"/>
+											</svg>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-12 col">
+										<div class="claim-box">
+											<div class="box-hint">
+												<p class="input-name help-icon">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9.75 12.75H8.25V8.25H9.75V12.75ZM9.75 6.75H8.25V5.25H9.75V6.75Z" fill="#2181F1"/>
+													</svg>
+													Загрузите документ подтверждающий ваше проживание в нем
+												</p>
+												<div class="hint">
+													<div class="hint-box">
+														Возможные форматы файлов: .txt .png .jpeg .bpm .tiff .doc .rtf .zip .pdf .docx .xlsx .rar .djv
+													</div>
+												</div>
+											</div>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input  type="file" class="claim-input claim-file" placeholder="Выбрать..." data-placeholder="Выбрать..." data-browse="Загрузить">
+										</div>
+									</div>
+									<div class="col col-12 col-md-6">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="content-box" id="anchor-link-5">
+							<h5 class="content-title">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 7V3H2V21H22V7H12ZM6 19H4V17H6V19ZM6 15H4V13H6V15ZM6 11H4V9H6V11ZM6 7H4V5H6V7ZM10 19H8V17H10V19ZM10 15H8V13H10V15ZM10 11H8V9H10V11ZM10 7H8V5H10V7ZM20 19H12V17H14V15H12V13H14V11H12V9H20V19ZM18 11H16V13H18V11ZM18 15H16V17H18V15Z" fill="#2181F1"/>
+								</svg>
+								Укажите данные о несостоявшейся поездке
+							</h5>
+							<div class="form-item">
+								<div class="row border-bottom justify-content-between">
+									<div class="col col-12 col-md-6">
+										<div class="claim-box">
+											<p class="input-name">
+												Страна путешествия
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input type="text" class="claim-input" placeholder="Канада">
+										</div>
+									</div>
+									<div class="col col-12 col-md-6">
+										<div class="row col-data">
+											<div class="col col-12 col-md-6">
+												<div class="claim-box">
+													<p class="input-name">
+														Период путешествия:
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" max="9999-01-01" class="w-100 claim-input claim-input-date " value="2019-11-20">
+												</div>
+											</div>
+											<div class="col col-12 col-md-6">
+												<div class="claim-box">
+													<p class="input-name opaciti">
+														Период путешествия по:
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" max="9999-01-01" class="w-100 claim-input claim-input-date " value="2019-11-30">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-md-6 pl-md-0">
+										<div class="claim-box">
+											<p class="input-name">
+												Общая стоимость тура (рублей)
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input type="text" class="claim-input" placeholder="111 111.00 ₽ ">
+										</div>
+									</div>
+									<div class="col col-12 col-md-6 p-md-0"></div>
+								</div>
+								<div class="row justify-content-between">
+									<div class="col-12 pl-md-0 pr-md-0">
+										<div class="claim-box">
+											<p class="input-name" >
+												С кем был заключен договор
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<select class="claim-select">
+												<option class="option-1">Прямой договор</option>
+												<option class="option-2">договор</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="content-box" id="anchor-link-6">
+							<h5 class="content-title">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 7V3H2V21H22V7H12ZM6 19H4V17H6V19ZM6 15H4V13H6V15ZM6 11H4V9H6V11ZM6 7H4V5H6V7ZM10 19H8V17H10V19ZM10 15H8V13H10V15ZM10 11H8V9H10V11ZM10 7H8V5H10V7ZM20 19H12V17H14V15H12V13H14V11H12V9H20V19ZM18 11H16V13H18V11ZM18 15H16V17H18V15Z" fill="#2181F1"/>
+								</svg>
+								Укажите данные о гостинице
+							</h5>
+							<div class="form-item">
+								<div class="row">
+											<div class="col-12 pl-md-0 pr-md-0">
+												<p class="input-name">
+													Название гостиницы
+												</p>
+												<div class="claim-search--wrap">
+												<div class="claim-search__wrapper">
+													<input type="text" class="claim-input claim-search claim-input--search" value="" placeholder="Введите название отеля">
+													<div class="claim-search__results-found">
+														1
+													</div>
+												</div>
+												<ul class="claim-search__drop-down">
+													<li class="claim-search__value">
+														<div > 
+															<div class="claim-search__box">
+																<div class="claim-search__box--line claim-search__box--title"><span>ООО "Элиса"</span></div>
+																<div class="claim-search__box--line">
+																	<span>Юр. адрес: </span> Москва, 112233, Кутузовский проспект, д. 36, стр. 3, офис 102
+																</div>
+																<div class="claim-search__box--line">
+																	<span>ИНН </span>7702404575
+																	<span> ОГРН </span>1167746742030
+																</div>
+															</div>
+														</div>
+													</li>
+												</ul>
+												</div>
+											</div>
+										</div> 
+								<div class="contants__info">	
+								<div class="row justify-content-between">
+									<div class="col col-12 col-md-6">
+										<div class="claim-box">
+											<p class="input-name">
+												Страна
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<select class="claim-select">
+												<option>США</option>
+												<option>Европа</option>
+												<option>Азия</option>
+											</select>
+										</div>
+									</div>
+									<div class="col col-12 col-md-6">
+										<div class="claim-box">
+											<p class="input-name">
+												Город
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input type="text" class="claim-input" placeholder="Нью-Йорк">
+										</div>
+									</div>
+								</div>
+								<div class="row justify-content-between">
+									<div class="col col-12 col-md-6 pl-md-0">
+										<div class="row">
+											<div class="col col-12 col-md-6">
+												<div class="claim-box">
+													<p class="input-name">
+														ИНН
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" class="claim-input" placeholder="">
+												</div>
+											</div>
+											<div class="col col-12 col-md-6">
+												<div class="claim-box">
+													<p class="input-name">
+														ОГРН
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" class="claim-input" placeholder="">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-md-6">
+										<div class="row">
+											<div class="col col-12 col-md-6">
+												<div class="claim-box">
+													<p class="input-name">
+														Телефон
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" class="claim-input" placeholder="+ 7 (ХХХ) ХХХ ХХХХ">
+												</div>
+											</div>
+											<div class="col col-12 col-md-6">
+												<div class="claim-box">
+													<p class="input-name">
+														E-mail
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" class="claim-input" placeholder="mail@mail.com">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								</div>	
+								<div class="row justify-content-between border-bottom">
+									<div class="col col-12 col-md-6">
+										<div class="claim-box">
+											<p class="input-name">
+												Юридический адрес
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input type="text" class="claim-input" placeholder="Введите юридический адрес">
+										</div>
+									</div>
+									<div class="col col-12 col-md-6">
+										<div class="claim-box">
+											<p class="input-name">
+												Фактический адрес
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input type="text" class="claim-input" placeholder="Введите Фактический адрес">
+										</div>
+									</div>
+								</div>						
+								<div class="row border-bottom justify-content-between">
+									<div class="col col-12 col-md-6">
+										<div class="claim-box">
+											<p class="input-name">
+												Номер ваучера/брони
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input type="text" class="claim-input" placeholder="112223445">
+										</div>
+									</div>
+									<div class="col col-12 col-md-6">
+										<div class="row col-data">
+											<div class="col col-12 col-md-6 ">
+												<div class="claim-box">
+													<p class="input-name">
+														Период проживания
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" max="9999-01-01" class="claim-input claim-input-date" value="2019-11-20">
+												</div>
+											</div>
+											<div class="col col-12 col-md-6 align-self-end">
+												<div class="claim-box">
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" max="9999-01-01" class="claim-input claim-input-date" value="2019-11-20">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-12 col">
+										<div class="claim-box">
+											<div class="box-hint">
+												<p class="input-name help-icon">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9.75 12.75H8.25V8.25H9.75V12.75ZM9.75 6.75H8.25V5.25H9.75V6.75Z" fill="#2181F1"/>
+													</svg>
+													Загрузите документ подтверждающий ваше проживание в нем
+												</p>
+												<div class="hint">
+													<div class="hint-box">
+														Возможные форматы файлов: .txt .png .jpeg .bpm .tiff .doc .rtf .zip .pdf .docx .xlsx .rar .djv
+													</div>
+												</div>
+											</div>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input  type="file" class="claim-input claim-file" placeholder="Выбрать..." data-placeholder="Выбрать..." data-browse="Загрузить">
+										</div>
+									</div>
+									<div class="col col-12 col-md-6">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="content-box" id="anchor-link-7">
+							<h5 class="content-title">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM18.92 8H15.97C15.65 6.75 15.19 5.55 14.59 4.44C16.43 5.07 17.96 6.35 18.92 8ZM12 4.04C12.83 5.24 13.48 6.57 13.91 8H10.09C10.52 6.57 11.17 5.24 12 4.04ZM4.26 14C4.1 13.36 4 12.69 4 12C4 11.31 4.1 10.64 4.26 10H7.64C7.56 10.66 7.5 11.32 7.5 12C7.5 12.68 7.56 13.34 7.64 14H4.26ZM5.08 16H8.03C8.35 17.25 8.81 18.45 9.41 19.56C7.57 18.93 6.04 17.66 5.08 16ZM8.03 8H5.08C6.04 6.34 7.57 5.07 9.41 4.44C8.81 5.55 8.35 6.75 8.03 8ZM12 19.96C11.17 18.76 10.52 17.43 10.09 16H13.91C13.48 17.43 12.83 18.76 12 19.96ZM14.34 14H9.66C9.57 13.34 9.5 12.68 9.5 12C9.5 11.32 9.57 10.65 9.66 10H14.34C14.43 10.65 14.5 11.32 14.5 12C14.5 12.68 14.43 13.34 14.34 14ZM14.59 19.56C15.19 18.45 15.65 17.25 15.97 16H18.92C17.96 17.65 16.43 18.93 14.59 19.56ZM16.36 14C16.44 13.34 16.5 12.68 16.5 12C16.5 11.32 16.44 10.66 16.36 10H19.74C19.9 10.64 20 11.31 20 12C20 12.69 19.9 13.36 19.74 14H16.36Z" fill="#2181F1"/>
+								</svg>
+								Укажите данные о перевозчике
+							</h5>
+							<div class="form-item">
+								<div class="row border-bottom max-w-100">
+									<div class="col col-12">
+										<div class="claim-box">
+											<p class="input-name">
+												Название перевозчика
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input type="text" class="claim-input" placeholder="Введите название перевозчика">
+										</div>
+									</div>
+								</div>
+								<div class="row justify-content-between">
+									<div class="col col-12 col-md-6">
+										<div class="row">
+											<div class="col col-12 col-md-6">
+												<div class="claim-box">
+													<p class="input-name">
+														Номер рейса туда
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" class="claim-input" placeholder="11111111">
+												</div>
+											</div>
+											<div class="col col-12 col-md-6">
+												<div class="claim-box">
+													<p class="input-name">
+														Дата отправления туда
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" max="9999-01-01" class="claim-input claim-input-date" value="2019-11-20">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col col-12 col-md-6">
+										<div class="row">
+											<div class="col col-12 col-md-6">
+												<div class="claim-box">
+													<p class="input-name">
+														Номер рейса обратно
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" class="claim-input" placeholder="11111111">
+												</div>
+											</div>
+											<div class="col col-12 col-md-6">
+												<div class="claim-box">
+													<p class="input-name">
+														Дата отправления обратно
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" max="9999-01-01" class="claim-input claim-input-date" value="2019-11-20">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row border-bottom">
+									<div class="col-md-6 col-12 pl-md-0">
+										<div class="claim-box">
+											<p class="input-name">
+												Была ли приобретена дополнительная услуга трансфера?
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<select class="claim-select">
+												<option>Да</option>
+												<option>Нет</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6 col-12 pr-md-0"></div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-12 col">
+										<div class="claim-box">
+											<div class="box-hint">
+												<p class="input-name help-icon">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9.75 12.75H8.25V8.25H9.75V12.75ZM9.75 6.75H8.25V5.25H9.75V6.75Z" fill="#2181F1"/>
+													</svg>
+													Загрузите копию ваучера/брони
+												</p>
+												<div class="hint">
+													<div class="hint-box">
+														Возможные форматы файлов: .txt .png .jpeg .bpm .tiff .doc .rtf .zip .pdf .docx .xlsx .rar .djv
+													</div>
+												</div>
+											</div>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input  type="file" class="claim-input claim-file" placeholder="Выбрать..." data-placeholder="Выбрать..." data-browse="Загрузить">
+										</div>
+									</div>
+									<div class="col col-12 col-md-6 ">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="content-box" id="anchor-link-8">
+							<h5 class="content-title">
+								<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M10 0H3C1.34 0 0 1.34 0 3V11C0 12.66 1.34 14 3 14L2 15V16H3L5 13.97L7 14V9H2V1.98L11 2V4H13V3C13 1.34 11.66 0 10 0ZM3 10C3.55 10 4 10.45 4 11C4 11.55 3.55 12 3 12C2.45 12 2 11.55 2 11C2 10.45 2.45 10 3 10ZM18.57 5.66C18.43 5.26 18.05 5 17.6 5H10.41C9.95 5 9.58 5.26 9.43 5.66L8 9.77L8.01 15.28C8.01 15.66 8.32 16 8.7 16H9.32C9.7 16 10 15.62 10 15.24V14H18V15.24C18 15.62 18.31 16 18.69 16H19.3C19.68 16 19.99 15.66 19.99 15.28L20 13.91V9.77L18.57 5.66ZM10.41 6H17.6L18.63 9H9.38L10.41 6ZM10 12C9.45 12 9 11.55 9 11C9 10.45 9.45 10 10 10C10.55 10 11 10.45 11 11C11 11.55 10.55 12 10 12ZM18 12C17.45 12 17 11.55 17 11C17 10.45 17.45 10 18 10C18.55 10 19 10.45 19 11C19 11.55 18.55 12 18 12Z" fill="#2181F1"/>
+								</svg>
+								Укажите данные о несостоявшейся экскурсии
+							</h5>
+							<div class="form-item">
+								<div class="row border-bottom max-w-100">
+									<div class="col col-12">
+										<div class="claim-box">
+											<p class="input-name">
+												Наименование экскурсии
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input type="text" class="claim-input" placeholder="Введите наименование экскурсии">
+										</div>
+									</div>
+								</div>
+								<div class="row border-bottom justify-content-between">
+									<div class="col col-12 col-md-6">
+										<div class="claim-box">
+											<p class="input-name">
+												Номер ваучера/брони на экскурсию
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input type="text" class="claim-input" placeholder="112223445">
+										</div>
+									</div>
+									<div class="col col-12 col-md-6">
+										<div class="row">
+											<div class="col col-12 col-md-6">
+												<div class="claim-box">
+													<p class="input-name">
+														Дата начала экскурсии:
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" max="9999-01-01" class="claim-input claim-input-date" value="2019-11-20">
+												</div>
+											</div>
+											<div class="col col-12 col-md-6">
+												<div class="claim-box">
+													<p class="input-name">
+														Дата окончания экскурсии:
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" max="9999-01-01" class="claim-input claim-input-date" value="2019-11-20">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-12 col">
+										<div class="claim-box">
+											<div class="box-hint">
+												<p class="input-name help-icon">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9.75 12.75H8.25V8.25H9.75V12.75ZM9.75 6.75H8.25V5.25H9.75V6.75Z" fill="#2181F1"/>
+													</svg>
+													Загрузите копию ваучера/брони на экскурсию
+												</p>
+												<div class="hint">
+													<div class="hint-box">
+														Возможные форматы файлов: .txt .png .jpeg .bpm .tiff .doc .rtf .zip .pdf .docx .xlsx .rar .djv
+													</div>
+												</div>
+											</div>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input  type="file" class="claim-input claim-file" placeholder="Выбрать..." data-placeholder="Выбрать..." data-browse="Загрузить">
+										</div>
+									</div>
+									<div class="col col-12 col-md-6  ">
+										<div class="box-hint opaciti">
+											<p class="input-name help-icon">
+												<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9.75 12.75H8.25V8.25H9.75V12.75ZM9.75 6.75H8.25V5.25H9.75V6.75Z" fill="#2181F1"/>
+												</svg>
+												Загрузите документ подтверждающий ваш перелет
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Возможные форматы файлов: .txt .png .jpeg .bpm .tiff .doc .rtf .zip .pdf .docx .xlsx .rar .djv
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="content-box" id="anchor-link-9">
+							<h5 class="content-title">
+								<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M18 15V16C18 17.1 17.1 18 16 18H2C0.89 18 0 17.1 0 16V2C0 0.9 0.89 0 2 0H16C17.1 0 18 0.9 18 2V3H9C7.89 3 7 3.9 7 5V13C7 14.1 7.89 15 9 15H18ZM9 13H19V5H9V13ZM13 10.5C12.17 10.5 11.5 9.83 11.5 9C11.5 8.17 12.17 7.5 13 7.5C13.83 7.5 14.5 8.17 14.5 9C14.5 9.83 13.83 10.5 13 10.5Z" fill="#2181F1"/>
+								</svg>
+								Зафиксируйте замечания
+							</h5>
+							<div class="form-item">
+								<div class="row border-bottom">
+									<div class="col-12 pl-md-0 pr-md-0">
+										<div class="claim-box">
+											<p class="input-name">
+												Примечания
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<textarea type="text" class="claim-input claim-textarea" placeholder="Ваши комментарии здесь..."></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-12 col">
+										<div class="claim-box">
+											<div class="box-hint">
+												<p class="input-name help-icon">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9.75 12.75H8.25V8.25H9.75V12.75ZM9.75 6.75H8.25V5.25H9.75V6.75Z" fill="#2181F1"/>
+													</svg>
+													Загрузите документы и фото, доказывающие суть обращения
+												</p>
+												<div class="hint">
+													<div class="hint-box">
+														Возможные форматы файлов: .txt .png .jpeg .bpm .tiff .doc .rtf .zip .pdf .docx .xlsx .rar .djv
+													</div>
+												</div>
+											</div>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input  type="file" class="claim-input claim-file" placeholder="Выбрать..." data-placeholder="Выбрать..." data-browse="Загрузить">
+										</div>
+									</div>
+									<div class="col col-12 col-md-6  ">
+										<div class="box-hint opaciti">
+											<p class="input-name help-icon">
+												<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9.75 12.75H8.25V8.25H9.75V12.75ZM9.75 6.75H8.25V5.25H9.75V6.75Z" fill="#2181F1"/>
+												</svg>
+												Загрузите документы подтверждающие ваши издержки
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Возможные форматы файлов: .txt .png .jpeg .bpm .tiff .doc .rtf .zip .pdf .docx .xlsx .rar .djv
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="content-box" id="anchor-link-8">
+							<h5 class="content-title">
+								<svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M16 5H13.19C12.74 4.22 12.12 3.55 11.37 3.04L13 1.41L11.59 0L9.42 2.17C8.96 2.06 8.49 2 8 2C7.51 2 7.04 2.06 6.59 2.17L4.41 0L3 1.41L4.62 3.04C3.88 3.55 3.26 4.22 2.81 5H0V7H2.09C2.04 7.33 2 7.66 2 8V9H0V11H2V12C2 12.34 2.04 12.67 2.09 13H0V15H2.81C3.85 16.79 5.78 18 8 18C10.22 18 12.15 16.79 13.19 15H16V13H13.91C13.96 12.67 14 12.34 14 12V11H16V9H14V8C14 7.66 13.96 7.33 13.91 7H16V5ZM10 13H6V11H10V13ZM10 9H6V7H10V9Z" fill="#2181F1"/>
+								</svg>
+								Выберете данные о некачественной услуге
+							</h5>
+							<div class="form-item">
+								<div class="row border-bottom justify-content-between">
+									<div class="col col-12 col-md-6">
+										<div class="checkbox__title fw-700">
+											Общие:
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													непредоставление забронированного объекта (гостиницы)
+												</p>
+											</label>
+											<div class="box-hint">
+												<p class="input-name help-icon">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9.75 12.75H8.25V8.25H9.75V12.75ZM9.75 6.75H8.25V5.25H9.75V6.75Z" fill="#2181F1"/>
+													</svg>
+												</p>
+												<div class="hint">
+													<div class="hint-box">
+														Возможные форматы файлов: .txt .png .jpeg .bpm .tiff .doc .rtf .zip .pdf .docx .xlsx .rar .djv
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													удаленность гостиницы от пляжа
+												</p>
+											</label>
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													отклонение от согласованного вида размещения в забронированной гостинице
+												</p>
+											</label>
+											<div class="box-hint">
+												<p class="input-name help-icon">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9.75 12.75H8.25V8.25H9.75V12.75ZM9.75 6.75H8.25V5.25H9.75V6.75Z" fill="#2181F1"/>
+													</svg>
+												</p>
+												<div class="hint">
+													<div class="hint-box">
+														Возможные форматы файлов: .txt .png .jpeg .bpm .tiff .doc .rtf .zip .pdf .docx .xlsx .rar .djv
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													трехместный номер вместо одноместного
+												</p>
+											</label>
+											<div class="box-hint">
+												<p class="input-name help-icon">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9.75 12.75H8.25V8.25H9.75V12.75ZM9.75 6.75H8.25V5.25H9.75V6.75Z" fill="#2181F1"/>
+													</svg>
+												</p>
+												<div class="hint">
+													<div class="hint-box">
+														Возможные форматы файлов: .txt .png .jpeg .bpm .tiff .doc .rtf .zip .pdf .docx .xlsx .rar .djv
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													трехместный номер вместо двухместного
+												</p>
+											</label>
+										</div>
+										<div class="row checkbox-wrapp">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													четырехместный номер вместо двухместного
+												</p>
+											</label>
+										</div>
+										<div class="checkbox__title fw-700">
+											Отклонения от заказанного номера:
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													туалет
+												</p>
+											</label>
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													ванная/горячая вода
+												</p>
+											</label>
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													электричество/газ
+												</p>
+											</label>
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													вода
+												</p>
+											</label>
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													кондиционер
+												</p>
+											</label>
+										</div>
+										<div class="row checkbox-wrapp">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													лифт
+												</p>
+											</label>
+										</div>
+										<div class="checkbox__title fw-700">
+											Нефункционирование оборудования:
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													полное отсутствие
+												</p>
+											</label>
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													плохая уборка номера и санузла
+												</p>
+											</label>
+										</div>
+										<div class="row checkbox-wrapp">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													нарушение графика смены постельного белья и полотенец
+												</p>
+											</label>
+										</div>
+									</div>
+									<div class="col col-12 col-md-6">
+										<div class="checkbox__title fw-700">
+											Недостатки при предоставлении номеров:
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													слишком маленькая площадь
+												</p>
+											</label>
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													отсутствие балкона
+												</p>
+											</label>
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													отсутствие вида на море
+												</p>
+											</label>
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													отсутствие ванны и туалета
+												</p>
+											</label>
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													отсутствие туалета
+												</p>
+											</label>
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													отсутствие душа
+												</p>
+											</label>
+											<div class="box-hint">
+												<p class="input-name help-icon">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9.75 12.75H8.25V8.25H9.75V12.75ZM9.75 6.75H8.25V5.25H9.75V6.75Z" fill="#2181F1"/>
+													</svg>
+												</p>
+												<div class="hint">
+													<div class="hint-box">
+														Возможные форматы файлов: .txt .png .jpeg .bpm .tiff .doc .rtf .zip .pdf .docx .xlsx .rar .djv
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													отсутствие кондиционера
+												</p>
+											</label>
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													отсутствие радио/ТВ
+												</p>
+											</label>
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													очень мало мебели
+												</p>
+											</label>
+											<div class="box-hint">
+												<p class="input-name help-icon">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9.75 12.75H8.25V8.25H9.75V12.75ZM9.75 6.75H8.25V5.25H9.75V6.75Z" fill="#2181F1"/>
+													</svg>
+												</p>
+												<div class="hint">
+													<div class="hint-box">
+														Возможные форматы файлов: .txt .png .jpeg .bpm .tiff .doc .rtf .zip .pdf .docx .xlsx .rar .djv
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row checkbox-wrapp">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													повреждения (трещины, щели и т. д.)
+												</p>
+											</label>
+										</div>
+										<div class="checkbox__title fw-700">
+											Наличие шума и неприятных запахов:
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													шум днем
+												</p>
+											</label>
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													шум ночью
+												</p>
+											</label>
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													неприятные запахи
+												</p>
+											</label>
+										</div>
+										<div class="row checkbox-wrapp">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													отсутствие в каталоге курортного оборудования
+												</p>
+											</label>
+										</div>
+										<div class="checkbox__title fw-700">
+											Сервис:
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													полное отсутствие сервиса в гостинице
+												</p>
+											</label>
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													плохая уборка номера и санузла
+												</p>
+											</label>
+											<div class="box-hint">
+												<p class="input-name help-icon">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9.75 12.75H8.25V8.25H9.75V12.75ZM9.75 6.75H8.25V5.25H9.75V6.75Z" fill="#2181F1"/>
+													</svg>
+												</p>
+												<div class="hint">
+													<div class="hint-box">
+														Возможные форматы файлов: .txt .png .jpeg .bpm .tiff .doc .rtf .zip .pdf .docx .xlsx .rar .djv
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row checkbox-wrap">
+											<label class="container_check">
+												<input class='checkbox' type="checkbox" name="vip">
+												<span class="checkmark"></span>
+												<p class="col input-name">
+													нарушение графика смены постельного белья и полотенец
+												</p>
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="border-bottom">
+									<div class="claim-box">
+										<p class="input-name">
+											Примечания
+										</p>
+										<div class="hint">
+											<div class="hint-box">
+												Ошибка! Необходимо внести корректный тип файлов
+											</div>
+										</div> 
+										<textarea type="text" class="claim-input claim-textarea" placeholder="Ваши комментарии здесь..."></textarea>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-12 col">
+										<div class="claim-box">
+											<div class="box-hint">
+												<p class="input-name help-icon">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9.75 12.75H8.25V8.25H9.75V12.75ZM9.75 6.75H8.25V5.25H9.75V6.75Z" fill="#2181F1"/>
+													</svg>
+													Загрузите документы и фото, доказывающие суть обращения
+												</p>
+												<div class="hint">
+													<div class="hint-box">
+														Возможные форматы файлов: .txt .png .jpeg .bpm .tiff .doc .rtf .zip .pdf .docx .xlsx .rar .djv
+													</div>
+												</div>
+											</div>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input  type="file" class="claim-input claim-file" placeholder="Выбрать..." data-placeholder="Выбрать..." data-browse="Загрузить">
+										</div>
+									</div>
+									<div class="col col-12 col-md-6  ">
+										<div class="box-hint opaciti">
+											<p class="input-name help-icon">
+												<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9.75 12.75H8.25V8.25H9.75V12.75ZM9.75 6.75H8.25V5.25H9.75V6.75Z" fill="#2181F1"/>
+												</svg>
+												Загрузите документы и фото, доказывающие суть обращения
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Возможные форматы файлов: .txt .png .jpeg .bpm .tiff .doc .rtf .zip .pdf .docx .xlsx .rar .djv
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="content-box" id="anchor-link-10">
+							<h5 class="content-title">
+								<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M18 15V16C18 17.1 17.1 18 16 18H2C0.89 18 0 17.1 0 16V2C0 0.9 0.89 0 2 0H16C17.1 0 18 0.9 18 2V3H9C7.89 3 7 3.9 7 5V13C7 14.1 7.89 15 9 15H18ZM9 13H19V5H9V13ZM13 10.5C12.17 10.5 11.5 9.83 11.5 9C11.5 8.17 12.17 7.5 13 7.5C13.83 7.5 14.5 8.17 14.5 9C14.5 9.83 13.83 10.5 13 10.5Z" fill="#2181F1"/>
+								</svg>
+								Опишите ваши убытки
+							</h5>
+							<div class="form-item">
+								<div class="row border-bottom">
+									<div class="col-12 pl-md-0 pr-md-0">
+										<div class="claim-box">
+											<p class="input-name">
+												Опишите ваши убытки
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<textarea type="text" class="claim-input claim-textarea" placeholder="В простой форме опишите ваши издержки, в следствии нарушений договора"></textarea>
+										</div>
+									</div>
+								</div>
+								<div class="row border-bottom pl-none">
+									<div class="col col-12 col-md-6">
+										<div class="claim-box">
+											<p class="input-name">
+												Общая сумма ваших убытков (руб.)
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input type="text" class="claim-input" placeholder="111 111.00 ₽">
+										</div>
+									</div>
+									<div class="col col-12 col-md-6 ">
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6 col-12 col">
+										<div class="claim-box">
+											<div class="box-hint">
+												<p class="input-name help-icon">
+													<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+														<path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9.75 12.75H8.25V8.25H9.75V12.75ZM9.75 6.75H8.25V5.25H9.75V6.75Z" fill="#2181F1"/>
+													</svg>
+													Загрузите документы подтверждающие ваши убытки
+												</p>
+												<div class="hint">
+													<div class="hint-box">
+														Возможные форматы файлов: .txt .png .jpeg .bpm .tiff .doc .rtf .zip .pdf .docx .xlsx .rar .djv
+													</div>
+												</div>
+											</div>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input  type="file" class="claim-input claim-file" placeholder="Выбрать..." data-placeholder="Выбрать..." data-browse="Загрузить">
+										</div>
+									</div>
+									<div class="col col-12 col-md-6 ">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="content-box" id="anchor-link-11">
+							<h5 class="content-title">
+								<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M18 15V16C18 17.1 17.1 18 16 18H2C0.89 18 0 17.1 0 16V2C0 0.9 0.89 0 2 0H16C17.1 0 18 0.9 18 2V3H9C7.89 3 7 3.9 7 5V13C7 14.1 7.89 15 9 15H18ZM9 13H19V5H9V13ZM13 10.5C12.17 10.5 11.5 9.83 11.5 9C11.5 8.17 12.17 7.5 13 7.5C13.83 7.5 14.5 8.17 14.5 9C14.5 9.83 13.83 10.5 13 10.5Z" fill="#2181F1"/>
+								</svg>
+								Укажите реквизиты для возмещения
+							</h5>
+							<div class="form-item"> 
+								<div class="row justify-content-between">
+									<div class="col col-12 col-md-6">
+										<div class="claim-box">
+											<p class="input-name">
+												Получатель возмещения (ФИО)
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input type="text" class="claim-input" placeholder="Карпов Виталий Валентинович">
+										</div>
+									</div>
+									<div class="col col-12 col-md-6">
+										<div class="claim-box">
+											<p class="input-name">
+												Наименование банка
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input type="text" class="claim-input" placeholder="БИНБАНК">
+										</div>
+									</div>
+								</div>
+								<div class="row justify-content-between">
+									<div class="col col-12 col-md-6">
+										<div class="claim-box">
+											<p class="input-name">
+												Лицевой счет получателя
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input type="text" class="claim-input" placeholder="4810111111122312341234234">
+										</div>
+									</div>
+									<div class="col col-12 col-md-6">
+										<div class="row">
+											<div class="col col-12 col-md-6">
+												<div class="claim-box">
+													<p class="input-name">
+														ИНН
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" class="claim-input" placeholder="7777777777777">
+												</div>
+											</div>
+											<div class="col col-12 col-md-6">
+												<div class="claim-box">
+													<p class="input-name">
+														БИК
+													</p>
+													<div class="hint">
+														<div class="hint-box">
+															Ошибка! Необходимо внести корректный тип файлов
+														</div>
+													</div> 
+													<input type="text" class="claim-input" placeholder="7777777777777">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row justify-content-between">
+									<div class="col col-12 col-md-6">
+										<div class="claim-box">
+											<p class="input-name">
+												Расчетный счет банка (если указан)
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input type="text" class="claim-input" placeholder="100000018">
+										</div>
+									</div>
+									<div class="col col-12 col-md-6">
+										<div class="claim-box">
+											<p class="input-name">
+												Кореспондентский счет банка
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input type="text" class="claim-input" placeholder="10000018">
+										</div>
+									</div>
+								</div>
+								<div class="row justify-content-between">
+									<div class="col col-12 col-md-3">
+										<div class="claim-box">
+											<p class="input-name">
+												Сумма к возмещению
+											</p>
+											<div class="hint">
+												<div class="hint-box">
+													Ошибка! Необходимо внести корректный тип файлов
+												</div>
+											</div> 
+											<input type="text" class="claim-input" placeholder="111 111.00 ₽">
+										</div>
+									</div>
+									<div class="col col-12 col-md-6"></div>
+								</div>
+							</div>
+						</div>
+						<div class="content-box buttons">
+							<div class="row">
+								<div class="col col-12 col-md-6">
+									<div class="row">
+										<div class="col col-12 col-md-6">
+											<div href="#" class="form-btn btn btn-blue ttu formation">Сформировать</div>
+										</div>
+										<div class="col col-12 col-md-6">
+											<div href="#" class="form-btn btn btn-gray ttu">Посмотреть</div>
+										</div>
+									</div> 
+								</div>
+								<div class="col offset-0 col-12 col-md-5 ml-auto col-xl-4 offset-xl-1 col-btn">
+									<div href="#" class="form-btn btn btn-red ttu">Отправить заявление</div>
+								</div>
+							</div>
+						</div> 
+					</div>
+
+					<div class="col right-site pl-0">
+						<div class="right-site-nav" >
+							<ul>
+								<li class="link link-1 text">
+									<svg  height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16 0H2C0.9 0 0 0.9 0 2V9C0 10.1 0.9 11 2 11H16C17.1 11 18 10.1 18 9V2C18 0.9 17.1 0 16 0ZM16 6H12C12 7.62 10.62 9 9 9C7.38 9 6 7.62 6 6H2V2H16V6ZM12 13H18V16C18 17.1 17.1 18 16 18H2C0.9 18 0 17.1 0 16V13H6C6 14.66 7.34 16 9 16C10.66 16 12 14.66 12 13Z"/>
+									</svg>
+									<a href="#anchor-link-1" data-target="anchor">
+										Выберите тип обращения
+									</a>
+									<p class="rignt-site-description-text">
+										1 Государственная регистрация, в согласии с традиционными представлениями, реквизирует договор, именно такой позиции придерживается арбитражная практика. 
+									</p>
+								</li>
+								<li class="link link-2">
+									<svg  height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16 2H11.82C11.4 0.84 10.3 0 9 0C7.7 0 6.6 0.84 6.18 2H2C0.9 2 0 2.9 0 4V18C0 19.1 0.9 20 2 20H16C17.1 20 18 19.1 18 18V4C18 2.9 17.1 2 16 2ZM9 2C9.55 2 10 2.45 10 3C10 3.55 9.55 4 9 4C8.45 4 8 3.55 8 3C8 2.45 8.45 2 9 2ZM9 6C10.66 6 12 7.34 12 9C12 10.66 10.66 12 9 12C7.34 12 6 10.66 6 9C6 7.34 7.34 6 9 6ZM15 18H3V16.6C3 14.6 7 13.5 9 13.5C11 13.5 15 14.6 15 16.6V18Z"/>
+									</svg>
+									<a href="#anchor-link-2" data-target="anchor">
+										Персональные данные
+									</a>
+									<p class="rignt-site-description-text">
+										2 Государственная регистрация, в согласии с традиционными представлениями, реквизирует договор, именно такой позиции придерживается арбитражная практика. 
+									</p>
+								</li>
+								<li class="link link-3">
+									<svg  height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8 13V12H1.01L1 16C1 17.11 1.89 18 3 18H17C18.11 18 19 17.11 19 16V12H12V13H8ZM18 4H13.99V2L11.99 0H7.99L5.99 2V4H2C0.9 4 0 4.9 0 6V9C0 10.11 0.89 11 2 11H8V9H12V11H18C19.1 11 20 10.1 20 9V6C20 4.9 19.1 4 18 4ZM12 4H8V2H12V4Z"/>
+									</svg>
+									<a href="#anchor-link-3" data-target="anchor">
+										Данные страховщика
+									</a>
+									<p class="rignt-site-description-text">
+										3 Государственная регистрация, в согласии с традиционными представлениями, реквизирует договор, именно такой позиции придерживается арбитражная практика. 
+									</p>
+								</li>
+								<li class="link link-4">
+									<svg  height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M1.49984 15.9998H20.4998V17.9998H1.49984V15.9998ZM21.0698 6.63982C20.8598 5.83982 20.0298 5.35982 19.2298 5.57982L13.9198 6.99982L7.01984 0.569824L5.08984 1.07982L9.22984 8.24982L4.25984 9.57982L2.28984 8.03982L0.839844 8.42982L2.65984 11.5898L3.42984 12.9198L5.02984 12.4898L10.3398 11.0698L14.6898 9.90982L19.9998 8.48982C20.8098 8.25982 21.2798 7.43983 21.0698 6.63982Z"/>
+									</svg>
+									<a href="#anchor-link-4" data-target="anchor">
+										Данные о поездке
+									</a>
+									<p class="rignt-site-description-text">
+										4 Государственная регистрация, в согласии с традиционными представлениями, реквизирует договор, именно такой позиции придерживается арбитражная практика. 
+									</p>
+								</li>
+								<li class="link link-5">
+									<svg  height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12 7V3H2V21H22V7H12ZM6 19H4V17H6V19ZM6 15H4V13H6V15ZM6 11H4V9H6V11ZM6 7H4V5H6V7ZM10 19H8V17H10V19ZM10 15H8V13H10V15ZM10 11H8V9H10V11ZM10 7H8V5H10V7ZM20 19H12V17H14V15H12V13H14V11H12V9H20V19ZM18 11H16V13H18V11ZM18 15H16V17H18V15Z"/>
+									</svg>
+									<a href="#anchor-link-5" data-target="anchor">
+										Данные об отеле
+									</a>
+									<p class="rignt-site-description-text">
+										5 Государственная регистрация, в согласии с традиционными представлениями, реквизирует договор, именно такой позиции придерживается арбитражная практика. 
+									</p>
+								</li>
+								<li class="link link-6">
+									<svg  height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM18.92 8H15.97C15.65 6.75 15.19 5.55 14.59 4.44C16.43 5.07 17.96 6.35 18.92 8ZM12 4.04C12.83 5.24 13.48 6.57 13.91 8H10.09C10.52 6.57 11.17 5.24 12 4.04ZM4.26 14C4.1 13.36 4 12.69 4 12C4 11.31 4.1 10.64 4.26 10H7.64C7.56 10.66 7.5 11.32 7.5 12C7.5 12.68 7.56 13.34 7.64 14H4.26ZM5.08 16H8.03C8.35 17.25 8.81 18.45 9.41 19.56C7.57 18.93 6.04 17.66 5.08 16ZM8.03 8H5.08C6.04 6.34 7.57 5.07 9.41 4.44C8.81 5.55 8.35 6.75 8.03 8ZM12 19.96C11.17 18.76 10.52 17.43 10.09 16H13.91C13.48 17.43 12.83 18.76 12 19.96ZM14.34 14H9.66C9.57 13.34 9.5 12.68 9.5 12C9.5 11.32 9.57 10.65 9.66 10H14.34C14.43 10.65 14.5 11.32 14.5 12C14.5 12.68 14.43 13.34 14.34 14ZM14.59 19.56C15.19 18.45 15.65 17.25 15.97 16H18.92C17.96 17.65 16.43 18.93 14.59 19.56ZM16.36 14C16.44 13.34 16.5 12.68 16.5 12C16.5 11.32 16.44 10.66 16.36 10H19.74C19.9 10.64 20 11.31 20 12C20 12.69 19.9 13.36 19.74 14H16.36Z" />
+									</svg>
+									<a href="#anchor-link-6" data-target="anchor">
+										Данные об экскурсии
+									</a>
+									<p class="rignt-site-description-text">
+										6  Государственная регистрация, в согласии с традиционными представлениями, реквизирует договор, именно такой позиции придерживается арбитражная практика. 
+									</p>
+								</li>
+								<li class="link link-7">
+									<svg  height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M12 4H5C3.34 4 2 5.34 2 7V15C2 16.66 3.34 18 5 18L4 19V20H5L7 17.97L9 18V13H4V5.98L13 6V8H15V7C15 5.34 13.66 4 12 4ZM5 14C5.55 14 6 14.45 6 15C6 15.55 5.55 16 5 16C4.45 16 4 15.55 4 15C4 14.45 4.45 14 5 14ZM20.57 9.66C20.43 9.26 20.05 9 19.6 9H12.41C11.95 9 11.58 9.26 11.43 9.66L10 13.77L10.01 19.28C10.01 19.66 10.32 20 10.7 20H11.32C11.7 20 12 19.62 12 19.24V18H20V19.24C20 19.62 20.31 20 20.69 20H21.3C21.68 20 21.99 19.66 21.99 19.28L22 17.91V13.77L20.57 9.66ZM12.41 10H19.6L20.63 13H11.38L12.41 10ZM12 16C11.45 16 11 15.55 11 15C11 14.45 11.45 14 12 14C12.55 14 13 14.45 13 15C13 15.55 12.55 16 12 16ZM20 16C19.45 16 19 15.55 19 15C19 14.45 19.45 14 20 14C20.55 14 21 14.45 21 15C21 15.55 20.55 16 20 16Z"/>
+									</svg>
+									<a href="#anchor-link-7" data-target="anchor">
+										Данные о перевозчике
+									</a>
+									<p class="rignt-site-description-text">
+										7  Государственная регистрация, в согласии с традиционными представлениями, реквизирует договор, именно такой позиции придерживается арбитражная практика. 
+									</p>
+								</li>
+								<li class="link link-8">
+									<svg  height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M16 5H13.19C12.74 4.22 12.12 3.55 11.37 3.04L13 1.41L11.59 0L9.42 2.17C8.96 2.06 8.49 2 8 2C7.51 2 7.04 2.06 6.59 2.17L4.41 0L3 1.41L4.62 3.04C3.88 3.55 3.26 4.22 2.81 5H0V7H2.09C2.04 7.33 2 7.66 2 8V9H0V11H2V12C2 12.34 2.04 12.67 2.09 13H0V15H2.81C3.85 16.79 5.78 18 8 18C10.22 18 12.15 16.79 13.19 15H16V13H13.91C13.96 12.67 14 12.34 14 12V11H16V9H14V8C14 7.66 13.96 7.33 13.91 7H16V5ZM10 13H6V11H10V13ZM10 9H6V7H10V9Z"/>
+									</svg>
+									<a href="#anchor-link-8" data-target="anchor">
+										Данные о некачественной услуге
+									</a>
+									<p class="rignt-site-description-text">
+										8  Государственная регистрация, в согласии с традиционными представлениями, реквизирует договор, именно такой позиции придерживается арбитражная практика. 
+									</p>
+								</li>
+								<li class="link link-9">
+									<svg  height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M18 15V16C18 17.1 17.1 18 16 18H2C0.89 18 0 17.1 0 16V2C0 0.9 0.89 0 2 0H16C17.1 0 18 0.9 18 2V3H9C7.89 3 7 3.9 7 5V13C7 14.1 7.89 15 9 15H18ZM9 13H19V5H9V13ZM13 10.5C12.17 10.5 11.5 9.83 11.5 9C11.5 8.17 12.17 7.5 13 7.5C13.83 7.5 14.5 8.17 14.5 9C14.5 9.83 13.83 10.5 13 10.5Z"/>
+									</svg>
+									<a href="#anchor-link-9" data-target="anchor">
+										Издержки
+									</a>
+									<p class="rignt-site-description-text">
+										9 Государственная регистрация, в согласии с традиционными представлениями, реквизирует договор, именно такой позиции придерживается арбитражная практика. 
+									</p>
+								</li>
+								<li class="link link-10">
+									<svg  height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M2 9V16H5V9H2ZM8 9V16H11V9H8ZM0 21H19V18H0V21ZM14 9V16H17V9H14ZM9.5 0L0 5V7H19V5L9.5 0Z"/>
+									</svg>
+									<a href="#anchor-link-10" data-target="anchor">
+										Данные об урегулировании
+									</a>
+									<p class="rignt-site-description-text">
+										10 Государственная регистрация, в согласии с традиционными представлениями, реквизирует договор, именно такой позиции придерживается арбитражная практика. 
+									</p>
+								</li>
+								<div class="rignt-site-description-icon">
+									<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M17.0002 0.333496C7.80016 0.333496 0.333496 7.80016 0.333496 17.0002C0.333496 26.2002 7.80016 33.6668 17.0002 33.6668C26.2002 33.6668 33.6668 26.2002 33.6668 17.0002C33.6668 7.80016 26.2002 0.333496 17.0002 0.333496ZM18.6668 25.3335H15.3335V22.0002H18.6668V25.3335ZM18.6668 18.6668H15.3335V8.66683H18.6668V18.6668Z" fill="#2181F1"/>
+									</svg>
+								</div>
+							</ul>
+						</div>
+					</div> 
+				</div>
+				<div class="claim-popup popup-oper">
+					<div class="claim-popup__wrap claim-popup__grounds">
+						<div class="popup-oper__wrap">
+							<div class="content-title">
+								Выберите основание для заявления:
+							</div>
+							<div class="claim-popup--btns">
+								<div class="btn btn-blue big-btn btn-blue-2 popup-oper__btn--close">Тур не состоялся</div>
+								<div class="btn btn-blue big-btn btn-blue-2 popup-oper__btn--close">Тур состоялся с замечаниями</div>
+							</div>
+						</div>
+						<div class="claim-popup__wrap--bottom">
+							<div class="claim-popup__text fw-700">
+								<span>Внимание! </span>Вы сможете подать заявление о некачественно оказанной услуге единовременно. 
+							</div>
+							<div class="claim-popup__text">
+								Убедительно просим Вас быть внимательными при заполнении  заявления и прикладывать всю необходимую документацию.
+							</div>
+							<div class="claim-popup__text fw-700">
+								Спасибо!
+							</div>
+						</div>
+					</div>
+					<div class="claim-popup__wrap claim-popup__notif">
+						<div class="popup-oper__wrap">
+							<div class="content-title content-title--notif">
+								Внимание!
+							</div>
+							Заявление с подобными данными уже было сформировано и по нему был дан ответ группой медиации от 22.03.2020 г.
+							<div class="claim-popup--btns">
+								<div class="btn btn-blue btn-blue-2 w-200 popup-oper__btn--close">
+									ок
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="claim-popup__wrap claim-popup__notif-2 ">
+						<div class="popup-oper__wrap">
+							<div class="content-title">
+								Формирование Вашего заявления прошло успешно!
+							</div>
+							При формировании Вашего заявления не было выявленно ни одного замечания. В течение 1 часа вы можете внести изменения  для корректировки заявления, после чего оно будет направлено дальше по инстанции. 
+							<div class="claim-popup--btns">
+								<div class="btn btn-blue btn-blue-2 w-200 popup-oper__btn--close">
+									Закрыть
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="claim-popup__wrap claim-popup__errors">
+						<div class="popup-oper__wrap">
+							<div class="content-title">
+								Перечень ошибок для исправления
+							</div>
+							<div class="form-item__erors--wrap scrollbar-light">
+								<div class="form-item__erors-box">
+									<div class="erors-box--title">
+										Раздел “Пропишите ваши персональные данные”
+									</div>
+									<ul class="erors-box--list">
+										<li>
+										<span>— </span>Поле "Период путешествия с" обязательно для заполнения.
+										</li>
+										<li>
+											<span>— </span>Поле "Период путешествия по" обязательно для заполнения.
+										</li>
+										<li>
+											<span>— </span>Поле "Страна путешествия" обязательно для заполнения.
+										</li>
+										<li>
+											<span>— </span>Поле "Общая стоимость по договору " обязательно для заполнения.
+										</li>
+									</ul>
+								</div>
+								<div class="form-item__erors-box">
+									<div class="erors-box--title">
+										Раздел “Опишите ваши убытки”
+									</div>
+									<ul class="erors-box--list">
+										<li>
+											<span>— </span>Должны быть приложены копии документов
+										</li>
+										<li>
+											<span>— </span>Должны быть приложены копии документов
+										</li>
+										<li>
+											<span>— </span>Должны быть приложены копии документов
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="claim-popup--btns claim-popup--btns-2">
+								<div class="btn btn-blue btn-blue-2 w-200 popup-oper__btn--close ml-auto">
+									Закрыть
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="claim-popup__wrap claim-popup__files">
+						<div class="popup-oper__wrap">
+							<div class="content-title">
+								Формирование претензии
+							</div>
+							<div class="form-item__erors--wrap">
+								<div class="form-item__erors-box">
+									<div class="file-box--title">
+										1) Претензия (<a href="#" download>файл.pdf</a>)
+									</div>
+									<ul class="file-box--list">
+										<li>
+											— Приложение №1 (титульник и само приложение) (<a href="#" download>файл.pdf</a>)
+										</li>
+										<li>
+											— Приложение №2 (титульник и само приложение) (<a href="#" download>файл.pdf</a>)
+										</li>
+										<li>
+											— Приложение №3 (только титульник с таблицей) (<a href="#" download>файл.pdf</a>)
+										</li>
+									</ul>
+								</div>
+								<div class="form-item__erors-box">
+									<div class="file-box--title">
+										2) Подтверждающая документация ч.1 (<a href="#" download>файл.pdf</a>)
+									</div>
+									<ul class="file-box--list">
+										<li>
+											<a href="#">— Название документа</a> (<a href="#" download>файл.pdf</a>)
+										</li>
+										<li>
+											<a href="#">— Название документа</a> (<a href="#" download>файл.pdf</a>)
+										</li>
+										<li>
+											<a href="#">— Название документа</a> (<a href="#" download>файл.pdf</a>)
+										</li>
+									</ul>
+								</div>
+								<div class="form-item__erors-box">
+									<div class="file-box--title">
+										3) Подтверждающая документация ч.2 (<a href="#" download>файл.pdf</a>)
+									</div>
+									<ul class="file-box--list">
+										<li>
+											<a href="#">— Название документа</a> (<a href="#" download>файл.pdf</a>)
+										</li>
+										<li>
+											<a href="#">— Название документа</a> (<a href="#" download>файл.pdf</a>)
+										</li>
+										<li>
+											<a href="#">— Название документа</a> (<a href="#" download>файл.pdf</a>)
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="claim-popup--btns claim-popup--btns-2 ml-auto">
+								<div class="btn btn-blue btn-blue-2 w-200 popup-oper__btn--close ml-auto">
+									Закрыть
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> 
+
+		</div>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="js/libs.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/jquery.scrollbar.min.js"></script>
+	</body>
+
+	</html>

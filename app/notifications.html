@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>progect</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+<style>
+  .block-notif{
+    margin: 0 auto;
+    max-width: 600px;
+    padding-top: 160px;
+    font-weight: 700;
+    color: #000;
+    font-size: 16px;
+  }
+  .block-notif__item{
+    border-bottom: 1px solid #D6D6D6;
+    padding-top: 70px;
+    padding-bottom: 50px;
+  }
+  .block-notif__item:last-child{
+    padding-top: 0;
+  }
+  .block-notif__item--text{
+    margin-bottom: 25px;
+  }
+  .block-notif__item--text:last-child{
+    margin-bottom: 0;
+  }
+  .block-notif__item--title{
+    margin-bottom: 25px;
+  }
+  a{
+    color: #2181F1;
+  }
+  .btn{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 16px;
+    align-items: center;
+    max-width: 400px;
+    text-transform: none;
+    width: 100%;
+    cursor: pointer;
+    background-color: #2181F1;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    font-weight: 700;
+    height: 60px;
+  }
+  .block-notif__item--text-2{
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+  .block-notif__item--link{
+    display: block;
+    margin-bottom: 30px;
+  }
+  .block-notif__item--link:last-child{
+    margin-bottom: 0;
+  }
+  .block-notif__item--link-2{
+    text-align: center;
+  }
+  .btn-gray{
+    background-color: #fff;
+    color: #979797;
+    border: 2px solid #979797
+  }
+  .block-notif__item-2{
+    padding-top: 70px;
+  }
+  .block-notif__item-social{
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+  .block-notif__item-social a{
+    margin-right: 30px;
+  }
+  .block-notif__item--text-gray{
+    color: #979797;
+  }
+  .block-notif__item-3{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .block-notif__item--text li{
+    display: block;
+    margin-bottom: 5px;
+  }
+  .block-notif__item--text li:last-child{
+    margin-bottom: 0;
+  }
+  @media screen and (max-width: 670px){
+    .block-notif__item--text li{
+      margin-bottom: 15px;
+    }
+    .block-notif__item--text li:last-child{
+      margin-bottom: 0;
+    }
+    .btn{
+      max-width: 100%;
+      text-transform: uppercase;
+      font-size: 14px;
+      padding: 5px;
+    }
+    .block-notif{
+      font-size: 14px;
+      padding: 20px;
+      padding-top: 35px;
+      padding-bottom: 95px;
+      padding-bottom: 100px;
+    }
+    .block-notif__item{
+      padding-top: 45px;
+      padding-bottom: 15px;
+    }
+    .block-notif__item--text-2{
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+    .block-notif__item--text-4{
+        margin-bottom: 30px;
+    }
+    .block-notif__item--link-2{
+      text-align: left;
+    }
+    .block-notif__item-2{
+      padding-top: 40px;
+    }
+    .block-notif__item-2 br{
+      margin-bottom: 20px;
+      display: block;
+    }
+  }
+</style>
+
+<div class="block-notif">
+  <a href="index.html" class="col-5 col-sm-2 header__logo pl-0">
+    <img src="images/logo.svg" alt="">
+  </a>
+  <div class="block-notif__item">
+    <div class="block-notif__item--title ">
+      Уважаемый USER!
+    </div>
+    <div class="block-notif__item--text">
+      Вы получили это письмо для подтверждения регистарции на портале Всероссийского общества туристов (travelunion.trave). Для активации Вашего профиля нажмите на кнопку “подтвердить регистрацию”:
+    </div>
+    <div class="block-notif__item--btn">
+      <div class="btn">
+        Подтвердить регистрацию
+      </div>
+    </div>
+    <div class="block-notif__item--text-2">
+      Подтверждение необходимо для исключения несанкционированного использования Вашего e-mail, а также составления претезий в адрес компаний нарушивших ваши права в сфере оказания туристических услуг. 
+    </div>
+    <div class="block-notif__item--text">
+      Если вы или третьи лица не регистрировались (турагент или туроператор) в ваших интересах на проекте ВОТ, просто не отвечайте на это письмо.
+    </div>
+  </div>
+  <div class="block-notif__item">
+    <div class="block-notif__item--title ">
+      Уважаемый USER!
+    </div>
+    <div class="block-notif__item--text ">
+    Вы получили это письмо для восстановления пароля на портале Всероссийского общества туристов (travelunion.trave). Для восстановления доступа к Вашему профилю нажмите на кнопку “восстановить пароль”:    </div>
+    <div class="block-notif__item--btn">
+      <div class="btn btn-blue btn-blue-2 big-btn">
+        Восстановить пароль
+      </div>
+    </div>
+    <div class="block-notif__item--text-2">
+      Подтверждение необходимо для исключения несанкционированного использования Вашего e-mail, а также составления претезий в адрес компаний нарушивших ваши права в сфере оказания туристических услуг. 
+    </div>
+    <div class="block-notif__item--text">
+      Если вы или третьи лица не регистрировались (турагент или туроператор) в ваших интересах на проекте ВОТ, просто не отвечайте на это письмо.
+    </div>
+  </div>
+  <div class="block-notif__item block-notif__item-3">
+    <div class="block-notif__item--text block-notif__item--text-gray">
+        Если кнопка выше не работает, скопируйте в ваш браузер адрес: <a href="#">Длинная ссылка на форму подтверждения регистрации</a>
+    </div>
+    <div class="block-notif__item--text block-notif__item--text-gray">
+        Для получения дополнительной помощи посетите наш <a href="#"> Центр поддержки</a>
+    </div>
+  </div>
+  <div class="block-notif__item">
+    <div class="block-notif__item--title ">
+      Уважаемый USER!
+    </div>
+    <div class="block-notif__item--text ">
+    На данном этапе мы вы нвам отказать в принятии в работу Вашей заявки, ввиду ее не полной комплектности. 
+    </div>
+    <a href="#" class="block-notif__item--link ">
+      Ссылка на нормативно-правовой акт
+    </a>
+    <a href="#" class="block-notif__item--link ">
+      Ссылка на вход в личный кабинет
+    </a>
+  </div>
+  <div class="block-notif__item">
+    <div class="block-notif__item--title ">
+      Уважаемый USER!
+    </div>
+    <div class="block-notif__item--text ">
+    Вы получили это письмо для подтверждения изменения email на портале Всероссийского общества туристов (travelunion.trave). Для активации внесение изменений нажмите на кнопку “подтвердить”:
+    </div>
+    <div class="block-notif__item--btn">
+      <div class="btn btn-blue btn-blue-2 big-btn">
+       Подтвердить
+      </div>
+    </div>
+    <div class="block-notif__item--text-2">
+      Подтверждение необходимо для исключения несанкционированного использования Вашего e-mail, а также составления претезий в адрес компаний нарушивших ваши права в сфере оказания туристических услуг. 
+    </div>
+  </div>
+  <div class="block-notif__item">
+    <div class="block-notif__item--title ">
+      Уважаемый USER!
+    </div>
+    <div class="block-notif__item--text ">
+    Этим письмом мы информируем вас о том, что статус вашего заявления изменился на “______________”. 
+    </div>
+    <div class="block-notif__item--text-2">
+      Для детального ознакомления с жизненным циклом вашей заявки, Вы можете перейти в личный кабтинет по ссылке ниже
+    </div>
+    <div class="block-notif__item--btn">
+      <div class="btn btn-blue btn-blue-2 big-btn">
+       Войти в личный кабинет
+      </div>
+    </div>
+    <div class="block-notif__item--text-2 block-notif__item--text-4">
+     Если Вы хотите закрыть данную заявку, нажмите на кнопку ниже
+    </div>
+    <div class="block-notif__item--btn">
+      <div class="btn btn-gray big-btn">
+       Закрыть заявку
+      </div>
+    </div>
+    <a href="#" class="block-notif__item--link block-notif__item--link-2 ">
+      Ссылка на нормативно-правовой акт
+    </a>
+    <a href="#" class="block-notif__item--link block-notif__item--link-2 ">
+      Ссылка на вход в личный кабинет
+    </a>
+  </div>
+  <div class="block-notif__item">
+    <div class="block-notif__item--title">
+      Уважаемый USER!
+    </div>
+    <div class="block-notif__item--text">
+      Уважаемый USER!
+      При оформлении заявления на некачественно оказанную туристическую услугу, Ваш email был указан в качестве участника данной заявления. Для отслеживания жизненного цикла оформлденного заявления, Вам необходимо пройти регистрацию на портале Всероссийского общества туристов (travelunion.trave):
+    </div>
+    <div class="block-notif__item--btn">
+      <div class="btn btn-blue btn-blue-2 big-btn">
+        Подтвердить регистрацию
+      </div>
+    </div>
+    <div class="block-notif__item--text-2">
+      Подтверждение необходимо для исключения несанкционированного использования Вашего e-mail, а также составления претезий в адрес компаний нарушивших ваши права в сфере оказания туристических услуг. 
+    </div>
+    <div class="block-notif__item--text ">
+    Если вы или третьи лица не регистрировались (турагент или туроператор) в ваших интересах на проекте ВОТ, просто не отвечайте на это письмо.    </div>
+  </div>
+  <div class="block-notif__item-2">
+    <div class="block-notif__item--text ">
+      <ul>
+        <li>
+          С уважением,
+        </li>
+        <li>
+          Администрация Всероссийского  общества туристов
+        </li>
+        <li>
+           Веб-сайт: http://travelunion.travel
+        </li>
+        <li>
+          Email: info@travelunion.travel
+        </li>
+        <li>
+          Телефон: 8(800) 250-68-60
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="block-notif__item-social">
+    <a href="#">
+      <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.4078 0C6.45088 0 0 6.45155 0 14.41C0 22.3684 6.45088 28.82 14.4078 28.82C22.3648 28.82 28.8157 22.3684 28.8157 14.41C28.8157 6.45155 22.3648 0 14.4078 0ZM21.7163 15.9685C22.3878 16.6245 23.0982 17.2419 23.7011 17.9657C23.9682 18.2859 24.2199 18.617 24.4115 18.9894C24.6851 19.5204 24.438 20.1026 23.9628 20.1342L21.0111 20.1336C20.2488 20.1967 19.6421 19.8892 19.1307 19.3679C18.7224 18.9525 18.3436 18.5088 17.9503 18.0792C17.7897 17.9029 17.6205 17.7369 17.4188 17.6063C17.0164 17.3445 16.6668 17.4247 16.4363 17.8451C16.2013 18.2729 16.1477 18.747 16.1253 19.2232C16.0931 19.9193 15.8833 20.1012 15.1849 20.1339C13.6927 20.2038 12.2768 19.9773 10.9609 19.2249C9.79998 18.5613 8.90146 17.6246 8.1185 16.5641C6.59385 14.4967 5.42619 12.2276 4.37703 9.89344C4.14091 9.36775 4.31365 9.08648 4.89351 9.07557C5.85688 9.057 6.82025 9.05936 7.78362 9.07469C8.17569 9.08088 8.43511 9.30525 8.58574 9.67527C9.10634 10.9563 9.74456 12.1752 10.5443 13.3056C10.7575 13.6066 10.975 13.9067 11.2848 14.1193C11.6268 14.354 11.8874 14.2764 12.0486 13.8946C12.1518 13.652 12.1963 13.3925 12.2187 13.1325C12.2954 12.2418 12.3045 11.3514 12.1719 10.4642C12.0893 9.90907 11.7771 9.55055 11.2238 9.44559C10.942 9.39222 10.9833 9.28785 11.1203 9.12687C11.3582 8.84855 11.5811 8.67637 12.0265 8.67637L15.3615 8.67578C15.8871 8.77897 16.005 9.01484 16.0763 9.54436L16.0793 13.251C16.0731 13.4559 16.1822 14.0633 16.5501 14.1974C16.8449 14.2947 17.0394 14.0583 17.2157 13.8716C18.0155 13.0228 18.5853 12.021 19.0956 10.984C19.3208 10.5267 19.5151 10.0535 19.7037 9.57944C19.844 9.22889 20.0622 9.05641 20.4578 9.0623L23.6692 9.06614C23.7639 9.06614 23.86 9.06702 23.9537 9.08324C24.4949 9.17582 24.6432 9.40873 24.4758 9.93678C24.2122 10.7664 23.7002 11.4575 23.1996 12.1504C22.6631 12.8922 22.0909 13.6081 21.5597 14.3531C21.0716 15.0342 21.1102 15.3771 21.7163 15.9685Z" fill="#2181F1"/>
+      </svg>
+    </a>
+    <a href="#">
+      <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.4078 0C6.45058 0 0 6.45155 0 14.41C0 22.3684 6.45058 28.82 14.4078 28.82C22.3651 28.82 28.8157 22.3684 28.8157 14.41C28.8157 6.45155 22.3651 0 14.4078 0ZM19.9045 7.33841L17.9117 7.3393C16.349 7.3393 16.0469 8.08198 16.0469 9.17169V11.5746H19.7733L19.7715 15.3381H16.0472V24.9963H12.1604V15.3381H8.91119V11.5746H12.1604V8.79902C12.1604 5.57796 14.1281 3.8237 17.0008 3.8237L19.9048 3.82812V7.33841H19.9045Z" fill="#2181F1"/>
+      </svg>
+
+    </a>
+    <a href="#">
+      <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14.8649 0C6.90761 0 0.457031 6.45155 0.457031 14.41C0.457031 22.3684 6.90761 28.82 14.8649 28.82C22.8221 28.82 29.2727 22.3684 29.2727 14.41C29.2727 6.45155 22.8221 0 14.8649 0ZM23.5774 10.5671C23.5842 10.7373 23.5877 10.9077 23.5877 11.079C23.5877 17.2345 18.9044 23.6014 11.0671 23.6014C8.67134 23.6014 6.33867 22.9177 4.32143 21.6237C4.27927 21.5969 4.26188 21.5447 4.27868 21.4978C4.29549 21.4512 4.34295 21.4223 4.39159 21.4279C4.73 21.4683 5.07609 21.4884 5.41952 21.4884C7.28347 21.4884 9.04808 20.912 10.5406 19.8184C8.75152 19.6675 7.2139 18.4566 6.66088 16.7292C6.64938 16.6932 6.65763 16.654 6.6824 16.6257C6.70745 16.5974 6.74578 16.585 6.78233 16.5918C7.27817 16.6858 7.78226 16.692 8.26807 16.613C6.42298 16.0395 5.1262 14.3109 5.1262 12.3429L5.12679 12.2857C5.12768 12.2483 5.14802 12.2141 5.18044 12.1955C5.21258 12.1766 5.25267 12.1763 5.28509 12.1946C5.76619 12.4617 6.29858 12.6333 6.84482 12.6991C5.78447 11.8538 5.16187 10.5724 5.16187 9.20176C5.16187 8.41102 5.37117 7.63384 5.76737 6.95424C5.78506 6.92388 5.8163 6.90442 5.85109 6.90176C5.88617 6.89823 5.92007 6.91356 5.94218 6.94068C8.11242 9.60303 11.3047 11.2423 14.7184 11.4531C14.6615 11.1665 14.6326 10.8711 14.6326 10.573C14.6326 8.10793 16.6377 6.10276 19.1022 6.10276C20.3138 6.10276 21.4847 6.60074 22.3239 7.47109C23.2699 7.27827 24.1711 6.93036 25.0036 6.43681C25.0416 6.41411 25.0893 6.41765 25.1244 6.44507C25.1586 6.47278 25.1728 6.51877 25.1592 6.56123C24.8771 7.44367 24.327 8.21348 23.588 8.76924C24.284 8.64806 24.9593 8.44345 25.6017 8.15834C25.6447 8.13859 25.6957 8.15097 25.7267 8.18724C25.7573 8.2238 25.76 8.27598 25.7335 8.31549C25.1483 9.19144 24.4231 9.94887 23.5774 10.5671Z" fill="#2181F1"/>
+      </svg>
+
+    </a>
+    <a href="#">
+      <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.9668 17.5689C14.1288 16.4476 16.2719 15.3367 18.4348 14.2148C16.2654 13.0827 14.1229 11.9652 11.9668 10.8398C11.9668 13.0906 11.9668 15.3184 11.9668 17.5689Z" fill="#2181F1"/>
+<path d="M14.5914 0C6.63447 0 0.183594 6.45155 0.183594 14.41C0.183594 22.3684 6.63447 28.82 14.5914 28.82C22.5484 28.82 28.9993 22.3684 28.9993 14.41C28.9993 6.45155 22.5484 0 14.5914 0ZM24.4082 19.2199C24.1588 20.302 23.2739 21.1001 22.2088 21.2189C19.6863 21.501 17.1334 21.5025 14.5908 21.501C12.0483 21.5025 9.49481 21.501 6.97171 21.2189C5.90664 21.1001 5.02227 20.302 4.77347 19.2199C4.41883 17.6785 4.41883 15.9965 4.41883 14.41C4.41883 12.8235 4.42296 11.1409 4.77759 9.60008C5.0264 8.51804 5.91076 7.71963 6.97584 7.60052C9.49894 7.31866 12.0524 7.31718 14.595 7.31866C17.1369 7.31718 19.6904 7.31866 22.2126 7.60052C23.2783 7.71963 24.1632 8.51775 24.412 9.60008C24.7667 11.1412 24.7637 12.8235 24.7637 14.41C24.7637 15.9965 24.7628 17.6788 24.4082 19.2199Z" fill="#2181F1"/>
+</svg>
+
+
+    </a>
+  </div>
+</div>
+
+
+
+</body>
+
+</html>

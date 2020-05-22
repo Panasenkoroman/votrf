@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>progect</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+<div class="preloader">
+    <div class="lds-spinner">
+      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-1">
+            <select class='languages'>
+             <option>RU</option>
+             <option>EN</option>
+             <option>DE</option>
+             <option>ZH</option>
+             <option>IT</option>
+             <option>TA</option>
+           </select>
+         </div>
+
+         <a href='#' class="col  ml-auto search-block">
+          <input type="search" class="search-input">
+          <img class="search-icon" src="images/icons/search-icon.svg" alt="">
+        </a>
+        <a href="login.html" class="col-2 col-sm-1 accont-icon align-items-right open-popup">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 3C11.66 3 13 4.34 13 6C13 7.66 11.66 9 10 9C8.34 9 7 7.66 7 6C7 4.34 8.34 3 10 3ZM10 17.2C7.5 17.2 5.29 15.92 4 13.98C4.03 11.99 8 10.9 10 10.9C11.99 10.9 15.97 11.99 16 13.98C14.71 15.92 12.5 17.2 10 17.2Z" fill="white"/>
+          </svg>
+        </a>
+        <div class="col-auto  col-none align-items-right">
+          <a href="login.html" class="login before-icon open-popup">
+            Войти в  Личный кабинет
+          </a>
+        </div>
+        <div class="col-auto  col-none align-items-right">
+          <a href="registration.html"  class="registration before-icon open-popup">
+            Регистрация
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <a href="index.html" class="col-5 col-sm-2 header__logo header__logo-sm">
+          <img src="images/logo.svg" alt="">
+        </a>
+        <a href="login.html" class="col-2 col-sm-1 accont-icon align-items-right open-popup ml-auto">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 3C11.66 3 13 4.34 13 6C13 7.66 11.66 9 10 9C8.34 9 7 7.66 7 6C7 4.34 8.34 3 10 3ZM10 17.2C7.5 17.2 5.29 15.92 4 13.98C4.03 11.99 8 10.9 10 10.9C11.99 10.9 15.97 11.99 16 13.98C14.71 15.92 12.5 17.2 10 17.2Z" fill="#2181F1"/>
+          </svg>
+        </a>
+        <div class="header__menu-btn col-2 col-sm-1">
+          <span></span>
+        </div>
+        <div class="header__menu col ">
+          <ul>
+            <li>
+              <a href="#">
+                О нас
+              </a>
+            </li>
+            <li class="drop-down-open">
+              <div>
+                наши проекты
+              </div>
+              <svg class="arrow-bottom" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.59 0.589844L6 5.16984L1.41 0.589844L0 1.99984L6 7.99984L12 1.99984L10.59 0.589844Z" />
+              </svg>
+
+            </li>
+            <li>
+              <a href="#">
+                партнёры
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                контакты
+              </a>
+            </li>
+          </ul>
+          <ul class="account-ul">
+            <li>
+              <div class="login before-icon open-popup">
+                Войти 
+              </div>
+            </li>
+            <li>
+              <div class="registration before-icon open-popup">
+                Регистрация
+              </div>
+            </li>
+            <li>
+              <div class="registration">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.99 0C4.47 0 0 4.48 0 10C0 15.52 4.47 20 9.99 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 9.99 0ZM16.92 6H13.97C13.65 4.75 13.19 3.55 12.59 2.44C14.43 3.07 15.96 4.35 16.92 6ZM10 2.04C10.83 3.24 11.48 4.57 11.91 6H8.09C8.52 4.57 9.17 3.24 10 2.04ZM2.26 12C2.1 11.36 2 10.69 2 10C2 9.31 2.1 8.64 2.26 8H5.64C5.56 8.66 5.5 9.32 5.5 10C5.5 10.68 5.56 11.34 5.64 12H2.26ZM3.08 14H6.03C6.35 15.25 6.81 16.45 7.41 17.56C5.57 16.93 4.04 15.66 3.08 14ZM6.03 6H3.08C4.04 4.34 5.57 3.07 7.41 2.44C6.81 3.55 6.35 4.75 6.03 6ZM10 17.96C9.17 16.76 8.52 15.43 8.09 14H11.91C11.48 15.43 10.83 16.76 10 17.96ZM12.34 12H7.66C7.57 11.34 7.5 10.68 7.5 10C7.5 9.32 7.57 8.65 7.66 8H12.34C12.43 8.65 12.5 9.32 12.5 10C12.5 10.68 12.43 11.34 12.34 12ZM12.59 17.56C13.19 16.45 13.65 15.25 13.97 14H16.92C15.96 15.65 14.43 16.93 12.59 17.56ZM14.36 12C14.44 11.34 14.5 10.68 14.5 10C14.5 9.32 14.44 8.66 14.36 8H17.74C17.9 8.64 18 9.31 18 10C18 10.69 17.9 11.36 17.74 12H14.36Z" fill="#2181F1"/>
+                </svg>
+                Выбор языка: РУССКИЙ
+              </div>
+            </li>
+            <li>
+              <div class="registration">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z" fill="#2181F1"/>
+                </svg>
+                поиск
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-red">
+            получить помощь
+          </a>
+          <ul class="drop-down">
+            <svg class="popup-close-arrow drop-down-close" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.99 5L16 5L16 3L3.99 3L3.99 -1.04995e-06L3.49691e-07 4L3.99 8L3.99 5Z" fill="#2181F1"/>
+            </svg>
+            <li class="drop-down-2-open">
+              <a href="#">
+               Цифровой адвокат
+             </a>
+           </li>
+           <ul class="drop-down-2">
+             <li>
+               <a href="#">
+                Туристический омбудсмен
+              </a>
+            </li>
+            <li>
+             <a href="#">
+              Служба обеспечения деятельности туристического омбудсмена
+            </a>
+          </li>
+          <li>
+           <a href="#">
+            Группа медиаторов
+          </a>
+        </li>
+      </ul>
+      <li>
+        <a href="#">
+         ответственный путешественник
+       </a>
+     </li>
+     <li>
+      <a href="#">
+       национальный туристический рейтинг
+     </a>
+   </li>
+ </ul>
+</div>
+<a href="#" class="btn btn-red">
+  получить помощь
+</a>
+</div>
+</div>
+</div>
+</header>
+<div class="page-traveler comand page-blue over-h">
+
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul class="breadcrumbs__list">
+        <li><a href="index.html" id="abtn">Главная </a></li>
+        <li><a href="#" id="bbtn">Наши проекты</a></li>
+        <li><a href="#" id="bbtn">Туристический омбудсмен</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="advokat">
+    <div class="container">
+      <h1 class="title-500 mb-50">
+        Ответственный путешественник
+      </h1>
+    </div>
+  </div>
+  <div class="bg treveler-bg">
+    <div class="container">
+      <div class="swiper-slide slider-4__item" data-hash="slide1">
+        <img class="slider-4__item-img-sm" src="images/slider-4-item-1.jpg" alt="">
+        <div class="slider-4__item-content item-content">
+          <h3 class="item__content-title">
+            Кто такой ответственный путешественник?
+          </h3>
+          <div class="item__content-text item__content-text-sm">
+            <p>
+             Ответственный путешественник -это путешественник, проявляющий заботу о том, чтобы оставить потомкам чистые моря и реки, леса и горы, сохраненные памятники архитектуры и искусства. 
+           </p>
+           <p>
+            Ответственный путешественник готов приложить усилия для того, чтобы сделать туризм доступным для инвалидов и маломобильных граждан, для детей из домов-интернатов и неблагополучных семей. 
+          </p>
+          <p>
+            Ответственный путешественник хочет, чтобы его мнение было услышано государством и предпринимательским сообществом, и не боится высказывать свои идеи и предложения.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="slider-2">
+  <div class="bg">
+    <div class="container">
+     <div class="slider-4">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slider-4__item" data-hash="slide1">
+          <img src="images/slider-4-item-1.jpg" alt="">
+          <div class="slider-4__item-content item-content">
+            <h3 class="item__content-title">
+              Кто такой активный турист и как им стать?
+            </h3>
+            <div class="item__content-text">
+              <p>
+                Небольшой текст описывающий концепцию Активного туриста, в чем уникальность и выгода от участия в этой программе. 
+              </p>
+              <p>
+                Динарское нагорье дешево. Независимое государство традиционно. Рыболовство текстологически просветляет традиционный снежный покров. Кристаллический фундамент, несмотря на то, что есть много бунгало для проживания, применяет крестьянский особый вид куниц.
+              </p>
+            </div>
+            <div class="btn btn-arrow big-btn btn-blue btn-blue-2 max-370">
+              Узнать подробнее
+              <svg width="57" height="6" viewBox="0 0 57 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M52.0672 2.45898H0.147461V3.70898H52.0672V5.58398L56.0503 3.08398L52.0672 0.583984V2.45898Z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slider-4__item" data-hash="slide2">
+          <img src="images/slider-4-item-1.jpg" alt="">
+          <div class="slider-4__item-content item-content">
+            <h3 class="item__content-title">
+              Кто такой активный турист и как им стать?
+            </h3>
+            <div class="item__content-text">
+              <p>
+                Небольшой текст описывающий концепцию Активного туриста, в чем уникальность и выгода от участия в этой программе. 
+              </p>
+              <p>
+                Динарское нагорье дешево. Независимое государство традиционно. Рыболовство текстологически просветляет традиционный снежный покров. Кристаллический фундамент, несмотря на то, что есть много бунгало для проживания, применяет крестьянский особый вид куниц.
+              </p>
+            </div>
+            <div class="btn btn-arrow big-btn btn-blue btn-blue-2 max-370">
+              Узнать подробнее
+              <svg width="57" height="6" viewBox="0 0 57 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M52.0672 2.45898H0.147461V3.70898H52.0672V5.58398L56.0503 3.08398L52.0672 0.583984V2.45898Z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slider-4__item" data-hash="slide3">
+          <img src="images/slider-4-item-1.jpg" alt="">
+          <div class="slider-4__item-content item-content">
+            <h3 class="item__content-title">
+              Кто такой активный турист и как им стать?
+            </h3>
+            <div class="item__content-text">
+              <p>
+                Небольшой текст описывающий концепцию Активного туриста, в чем уникальность и выгода от участия в этой программе. 
+              </p>
+              <p>
+                Динарское нагорье дешево. Независимое государство традиционно. Рыболовство текстологически просветляет традиционный снежный покров. Кристаллический фундамент, несмотря на то, что есть много бунгало для проживания, применяет крестьянский особый вид куниц.
+              </p>
+            </div>
+            <div class="btn btn-arrow big-btn btn-blue btn-blue-2 max-370">
+              Узнать подробнее
+              <svg width="57" height="6" viewBox="0 0 57 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M52.0672 2.45898H0.147461V3.70898H52.0672V5.58398L56.0503 3.08398L52.0672 0.583984V2.45898Z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slider-4__item" data-hash="slide4">
+          <img src="images/slider-4-item-1.jpg" alt="">
+          <div class="slider-4__item-content item-content">
+            <h3 class="item__content-title">
+              Кто такой активный турист и как им стать?
+            </h3>
+            <div class="item__content-text">
+              <p>
+                Небольшой текст описывающий концепцию Активного туриста, в чем уникальность и выгода от участия в этой программе. 
+              </p>
+              <p>
+                Динарское нагорье дешево. Независимое государство традиционно. Рыболовство текстологически просветляет традиционный снежный покров. Кристаллический фундамент, несмотря на то, что есть много бунгало для проживания, применяет крестьянский особый вид куниц.
+              </p>
+            </div>
+            <div class="btn btn-arrow big-btn btn-blue btn-blue-2 max-370">
+              Узнать подробнее
+              <svg width="57" height="6" viewBox="0 0 57 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M52.0672 2.45898H0.147461V3.70898H52.0672V5.58398L56.0503 3.08398L52.0672 0.583984V2.45898Z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide slider-4__item" data-hash="slide5">
+          <img src="images/slider-4-item-1.jpg" alt="">
+          <div class="slider-4__item-content item-content">
+            <h3 class="item__content-title">
+              Кто такой активный турист и как им стать?
+            </h3>
+            <div class="item__content-text">
+              <p>
+                Небольшой текст описывающий концепцию Активного туриста, в чем уникальность и выгода от участия в этой программе. 
+              </p>
+              <p>
+                Динарское нагорье дешево. Независимое государство традиционно. Рыболовство текстологически просветляет традиционный снежный покров. Кристаллический фундамент, несмотря на то, что есть много бунгало для проживания, применяет крестьянский особый вид куниц.
+              </p>
+            </div>
+            <div class="btn btn-arrow big-btn btn-blue btn-blue-2 max-370">
+              Узнать подробнее
+              <svg width="57" height="6" viewBox="0 0 57 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M52.0672 2.45898H0.147461V3.70898H52.0672V5.58398L56.0503 3.08398L52.0672 0.583984V2.45898Z" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="swiper-pag"></div>
+  </div>
+</div>
+</div>
+
+
+<div class="products products-2 cabinet-element treveler-slider">
+  <div class="container">
+    <div class="slider-top">
+      <div class="title traveler--title">
+        Проекты:
+      </div>
+      <div class="slider-navigation">
+        <div class="swiper-button-prev button-prev">
+         <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 5.58398H3.83L7.41 1.99398L6 0.583984L0 6.58398L6 12.584L7.41 11.174L3.83 7.58398H18V5.58398Z" fill="black"/>
+        </svg>
+      </div>
+      <div class="swiper-button-next button-next">
+        <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.37114e-07 7.58398L14.17 7.58398L10.59 11.174L12 12.584L18 6.58398L12 0.583984L10.59 1.99398L14.17 5.58398L6.11959e-07 5.58398L4.37114e-07 7.58398Z" fill="black"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cabinet-slider cabinet-slider-3 pt-0">
+  <div class="container pl-15 pr-15">
+    <div class="row">
+      <div class=" col filters">
+        <div class="filter active" data-id="36">
+          Защита окружающей среды
+        </div>
+        <div class="filter" data-id="37">
+          Культурное наследие
+        </div>
+        <div class="filter" data-id="38">
+          Покажи мир ребенку
+        </div>
+        <div class="filter" data-id="39">
+          Среда без барьеров
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container  pl-15 pr-15">
+    <div class="swiper-container-" data-item-id="36">
+     <div class="swiper-container-3">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="slider__item products__item "  style="background-image: url(images/cabinet-slide-1.jpg)">
+            <div class="products__item-like">
+              <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.5 0.583984C12.76 0.583984 11.09 1.39398 10 2.67398C8.91 1.39398 7.24 0.583984 5.5 0.583984C2.42 0.583984 0 3.00398 0 6.08398C0 9.86398 3.4 12.944 8.55 17.624L10 18.934L11.45 17.614C16.6 12.944 20 9.86398 20 6.08398C20 3.00398 17.58 0.583984 14.5 0.583984ZM10.1 16.134L10 16.234L9.9 16.134C5.14 11.824 2 8.97398 2 6.08398C2 4.08398 3.5 2.58398 5.5 2.58398C7.04 2.58398 8.54 3.57398 9.07 4.94398H10.94C11.46 3.57398 12.96 2.58398 14.5 2.58398C16.5 2.58398 18 4.08398 18 6.08398C18 8.97398 14.86 11.824 10.1 16.134Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="">
+              <p class="products__slide-name">
+                Культурное наследие
+              </p>
+              <h5 class="products__item-title">
+                Восстановление уникального собора
+              </h5>
+              <div class="products__item-subtitle">
+                <p>
+                  Программа «Чистый и доступный пляж» направлена на привлечение внимания общественности и государства к проблеме загрязнения пляжей естественных водоемов бытовым мусором, а также проблемой фактической недоступности подавляющего числа российских пляжей для лиц с инвалидностью и маломобильных туристов. 
+                  Программа «Чистый и доступный пляж» будет реализовываться в тесном контакте с органами государственной власти всех уровней...
+                </p>
+              </div>
+              <div class="products__item-info">
+                <div class="row fs-12">
+                  <div class="col-auto">
+                    Учестников: 65
+                  </div>
+                  <div class="col-auto ml-auto">
+                    Собрано:
+                  </div>
+                </div>
+                <div class="row fs-22">
+                  <div class="col-auto">
+                    45%
+                  </div>
+                  <div class="col-auto ml-auto">
+                    40 000 р 
+                  </div>
+                </div>
+                <div class="progres-line">
+                  <div style=" width: 45%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" >
+          <div class="slider__item products__item " style="background-image: url(images/cabinet-slide-2.jpg)">
+            <div class="products__item-like">
+              <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.5 0.583984C12.76 0.583984 11.09 1.39398 10 2.67398C8.91 1.39398 7.24 0.583984 5.5 0.583984C2.42 0.583984 0 3.00398 0 6.08398C0 9.86398 3.4 12.944 8.55 17.624L10 18.934L11.45 17.614C16.6 12.944 20 9.86398 20 6.08398C20 3.00398 17.58 0.583984 14.5 0.583984ZM10.1 16.134L10 16.234L9.9 16.134C5.14 11.824 2 8.97398 2 6.08398C2 4.08398 3.5 2.58398 5.5 2.58398C7.04 2.58398 8.54 3.57398 9.07 4.94398H10.94C11.46 3.57398 12.96 2.58398 14.5 2.58398C16.5 2.58398 18 4.08398 18 6.08398C18 8.97398 14.86 11.824 10.1 16.134Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="">
+              <p class="products__slide-name">
+                Культурное наследие
+              </p>
+              <h5 class="products__item-title">
+                Восстановление уникального собора
+              </h5>
+              <div class="products__item-subtitle">
+                <p>
+                  Программа «Чистый и доступный пляж» направлена на привлечение внимания общественности и государства к проблеме загрязнения пляжей естественных водоемов бытовым мусором, а также проблемой фактической недоступности подавляющего числа российских пляжей для лиц с инвалидностью и маломобильных туристов. 
+                  Программа «Чистый и доступный пляж» будет реализовываться в тесном контакте с органами государственной власти всех уровней...
+                </p>
+              </div>
+              <div class="products__item-info">
+                <div class="row fs-12">
+                  <div class="col-auto">
+                    Учестников: 65
+                  </div>
+                  <div class="col-auto ml-auto">
+                    Собрано:
+                  </div>
+                </div>
+                <div class="row fs-22">
+                  <div class="col-auto">
+                    45%
+                  </div>
+                  <div class="col-auto ml-auto">
+                    40 000 р 
+                  </div>
+                </div>
+                <div class="progres-line">
+                  <div style=" width: 45%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide" >
+          <div class="slider__item products__item " style="background-image: url(images/cabinet-slide-3.jpg)">
+            <div class="products__item-like">
+              <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.5 0.583984C12.76 0.583984 11.09 1.39398 10 2.67398C8.91 1.39398 7.24 0.583984 5.5 0.583984C2.42 0.583984 0 3.00398 0 6.08398C0 9.86398 3.4 12.944 8.55 17.624L10 18.934L11.45 17.614C16.6 12.944 20 9.86398 20 6.08398C20 3.00398 17.58 0.583984 14.5 0.583984ZM10.1 16.134L10 16.234L9.9 16.134C5.14 11.824 2 8.97398 2 6.08398C2 4.08398 3.5 2.58398 5.5 2.58398C7.04 2.58398 8.54 3.57398 9.07 4.94398H10.94C11.46 3.57398 12.96 2.58398 14.5 2.58398C16.5 2.58398 18 4.08398 18 6.08398C18 8.97398 14.86 11.824 10.1 16.134Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="">
+              <p class="products__slide-name">
+                Культурное наследие
+              </p>
+              <h5 class="products__item-title">
+                Восстановление уникального собора
+              </h5>
+              <div class="products__item-subtitle">
+                <p>
+                  Программа «Чистый и доступный пляж» направлена на привлечение внимания общественности и государства к проблеме загрязнения пляжей естественных водоемов бытовым мусором, а также проблемой фактической недоступности подавляющего числа российских пляжей для лиц с инвалидностью и маломобильных туристов. 
+                  Программа «Чистый и доступный пляж» будет реализовываться в тесном контакте с органами государственной власти всех уровней...
+                </p>
+              </div>
+              <div class="products__item-info">
+                <div class="row fs-12">
+                  <div class="col-auto">
+                    Учестников: 65
+                  </div>
+                  <div class="col-auto ml-auto">
+                    Собрано:
+                  </div>
+                </div>
+                <div class="row fs-22">
+                  <div class="col-auto">
+                    45%
+                  </div>
+                  <div class="col-auto ml-auto">
+                    40 000 р 
+                  </div>
+                </div>
+                <div class="progres-line">
+                  <div style=" width: 45%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slider__item products__item "  style="background-image: url(images/cabinet-slide-4.jpg)">
+            <div class="products__item-like">
+              <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.5 0.583984C12.76 0.583984 11.09 1.39398 10 2.67398C8.91 1.39398 7.24 0.583984 5.5 0.583984C2.42 0.583984 0 3.00398 0 6.08398C0 9.86398 3.4 12.944 8.55 17.624L10 18.934L11.45 17.614C16.6 12.944 20 9.86398 20 6.08398C20 3.00398 17.58 0.583984 14.5 0.583984ZM10.1 16.134L10 16.234L9.9 16.134C5.14 11.824 2 8.97398 2 6.08398C2 4.08398 3.5 2.58398 5.5 2.58398C7.04 2.58398 8.54 3.57398 9.07 4.94398H10.94C11.46 3.57398 12.96 2.58398 14.5 2.58398C16.5 2.58398 18 4.08398 18 6.08398C18 8.97398 14.86 11.824 10.1 16.134Z" fill="white"/>
+              </svg>
+            </div>
+            <div class="">
+              <p class="products__slide-name">
+                Культурное наследие
+              </p>
+              <h5 class="products__item-title">
+                Восстановление уникального собора
+              </h5>
+              <div class="products__item-subtitle">
+                <p>
+                  Программа «Чистый и доступный пляж» направлена на привлечение внимания общественности и государства к проблеме загрязнения пляжей естественных водоемов бытовым мусором, а также проблемой фактической недоступности подавляющего числа российских пляжей для лиц с инвалидностью и маломобильных туристов. 
+                  Программа «Чистый и доступный пляж» будет реализовываться в тесном контакте с органами государственной власти всех уровней...
+                </p>
+              </div>
+              <div class="products__item-info">
+                <div class="row fs-12">
+                  <div class="col-auto">
+                    Учестников: 65
+                  </div>
+                  <div class="col-auto ml-auto">
+                    Собрано:
+                  </div>
+                </div>
+                <div class="row fs-22">
+                  <div class="col-auto">
+                    45%
+                  </div>
+                  <div class="col-auto ml-auto">
+                    40 000 р 
+                  </div>
+                </div>
+                <div class="progres-line">
+                  <div style=" width: 45%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-pagination"></div> 
+      <div class="btn btn-blue btn-blue-2 progect-btn">Все проекты</div>
+    </div>
+  </div>
+</div>
+</div>
+</div> 
+
+<div class="message-block">
+  <div class="container">
+    <div class="title traveler--title">
+      Сообщить о проблеме:
+    </div>
+    <div class="message-block-box">
+      <div class="row">
+        <div class="col-lg-8 col-12">
+          <div class="message-block-title">
+            Столкнулись с некомпетентностью или откровенным хамством? Есть решение... 
+          </div>
+          <p class="massage-block-text">
+            Вы можете отправить нам ваше обращение по поводу нарушения закона в области регулирования туристической деятельности и мы приложим все усилия, чтобы исправить данную ситуацию. 
+          </p>
+        </div>
+        <div class="col-lg-4 col-12 align-self-end">
+          <a href="#" class="btn btn-red form-btn big-btn btn-arrow">
+            Сообщить о проблеме 
+            <svg width="56" height="5" viewBox="0 0 56 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M51.9198 1.875H0V3.125H51.9198V5L55.9028 2.5L51.9198 0V1.875Z" fill="white"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="slider treveler-slider-2">
+  <div class="wrapper">
+   <div class="swiper-container-2 container">
+    <div class="slider-top">
+      <div class="title traveler--title">
+        Выскажи мнение:
+      </div>
+      <div class="slider-navigation">
+        <div class="swiper-button-prev">
+         <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 5.58398H3.83L7.41 1.99398L6 0.583984L0 6.58398L6 12.584L7.41 11.174L3.83 7.58398H18V5.58398Z" fill="black"/>
+        </svg>
+      </div>
+      <div class="swiper-button-next">
+        <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4.37114e-07 7.58398L14.17 7.58398L10.59 11.174L12 12.584L18 6.58398L12 0.583984L10.59 1.99398L14.17 5.58398L6.11959e-07 5.58398L4.37114e-07 7.58398Z" fill="black"/>
+        </svg>
+      </div>
+    </div>
+    
+  </div>
+  
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="slider__item">
+        <img src="images/slider-img-1.jpg" alt="">
+        <p class="slider__item-date problems__item-subtitle">
+          направления путешествий
+        </p>
+        <p class="slider__item-text">
+          Какие направления для внутреннего или внешнего туризма нуждаются в повышенном внимании и контроле в этом 2020 году?
+        </p>
+        <a href="#" class="btn btn-blue btn-blue-2 big-btn">
+          Голосовать
+        </a>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="slider__item">
+        <img src="images/slider-img-2.jpg" alt="">
+        <p class="slider__item-date problems__item-subtitle">
+          авиаперелеты
+        </p>
+        <p class="slider__item-text">
+          В какиех сервисах есть необходимость при покупки и организации авиаперелетов на внутренних и внешних рейсах?
+        </p>
+        <a href="#" class="btn btn-blue btn-blue-2 big-btn">
+          Голосовать
+        </a>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="slider__item">
+        <img src="images/slider-img-3.jpg" alt="">
+        <p class="slider__item-date problems__item-subtitle">
+          визы, документы
+        </p>
+        <p class="slider__item-text">
+          Как часто вы пользуетесь сервисами по подучении виз и прочих документов в течение года?
+        </p>
+        <a href="#" class="btn btn-blue btn-blue-2 big-btn">
+          Голосовать
+        </a>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="slider__item">
+        <img src="images/slider-img-1.jpg" alt="">
+        <p class="slider__item-date problems__item-subtitle">
+          направления путешествий
+        </p>
+        <p class="slider__item-text">
+          Какие направления для внутреннего или внешнего туризма нуждаются в повышенном внимании и контроле в этом 2020 году?
+        </p>
+        <a href="#" class="btn btn-blue btn-blue-2 big-btn">
+          Голосовать
+        </a>
+      </div>
+    </div>
+  </div> 
+  <a href="#" class="btn-blue btn big-btn btn-arrow max-370">
+    Посмотреть все опросы
+    <svg width="56" height="5" viewBox="0 0 56 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M52.01 1.875H0V3.125H52.01V5L56 2.5L52.01 0V1.875Z" />
+    </svg>
+  </a>
+  <div class="slider-pagination"></div>
+</div>
+</div>
+</div>
+
+
+<div class="staff">
+  <div class="container">
+    <h3 class="title traveler--title">
+      Как стать ответственным путешественником:
+    </h3>
+    <div class="swiper-container-2-0">
+     <div class="swiper-wrapper partners__items partners__items-2 row">
+      <div class="col col-md-4 swiper-slide">
+        <div class="partners__item-box">
+          <p class="partners__items-number">01</p>
+          <p class="partners__items-text">
+            Для приобритения услуги Вам необхлдимо зайти на сайт наших компани-партнеров и приобрести необходимый вам пакет услуг, с нужным вам уровнем покрытия 
+          </p>
+        </div>
+      </div>
+      <div class="col col-md-4 swiper-slide">
+        <div class="partners__item-box">
+          <p class="partners__items-number">02</p>
+          <p class="partners__items-text">
+            Оплатив данный пакет вы автоматически получаете регистрацию на нашем портале и также весь спектр услуг, входящий в выбраный вами пакет
+          </p>
+        </div>
+      </div>
+      <div class="col col-md-4 swiper-slide">
+        <div class="partners__item-box">
+          <p class="partners__items-number">03</p>
+          <p class="partners__items-text">
+            В итоге вы получает пакет документов в электронном виде, который гарантируют вам  исполнение всего перечня заявленных в нем услуг 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-pagination-2-0"></div>
+  <div class="row text-and-btn">
+    <div class="col-lg-8 col-12 f-700">
+      Если у вас остались вопросы вы можете найти ответы на самые частозадаваемые из них на данной странице, либо написав нам через форму обратной связи на странице с нашей контактной информацией
+    </div>
+    <div class="col-lg-4 col-12 ml-auto">
+      <a href="#" class="btn btn-red big-btn">зарегистрироваться</a>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="feedback">
+  <div class="container">
+    <h1 class="title traveler--title">
+      Хотите быть в курсе свежих новостей и актуальной информации?
+    </h1>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <p class="feedback-text">
+          Если вы хотите быть в курсе последних новостей, изменений в законодательстве, наших акциях и предложениях — подпишитесь на нашу рассылку.
+          <span>Мы будем отправлять вам только самую актуальную и проверенную информацию о  защите ваших интересов, деятельности туристического омбудсмена и наших проектов. </span>
+        </p>
+
+      </div>
+      <div class="col-12 col-sm-8 col-md-6">
+         <input class="feedback-input" type="text" placeholder="Оставьте ваш email">
+         <input class="feedback-input feedback-input-sm" type="text" placeholder="Ваш email">
+         <p class="personal">
+           Нажимая на кнопку вы даете свое согласие на обработку ваших персональных данных
+         </p>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<footer class="footer">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-12 col-xl-4 ">
+        <div class="footer__item">
+          <a href="index.html" class="footer-logo">
+            <img src="images/footer-logo.svg" alt="">
+          </a>
+          <p class="footer__item-text">
+            © 2019 Все права защищены. 
+          </p>
+          <p class="footer__item-text">
+            Использование любых материалов только с согласия правообладателя
+          </p>
+        </div>
+        <div class="footer__item">
+          <div class="gerb">
+            <img class="gerb-img" src="images/gerb.svg" alt="">
+          </div>
+          <div class="footer__item-title">
+            При поддержке:
+          </div>
+          <p class="footer__item-name">
+            ФЕДЕРАЛЬНОГО АГЕНТСТВО ПО ТУРИЗМУ
+          </p>
+          <p class="footer__item-name">
+            Министерство экономического развития Российской Федерации
+          </p>
+        </div>
+      </div>
+      <div class="col col-lg-4 col-center ml-xl-auto">
+        <div class="footer__item">
+          <div class="footer__item-title">
+            наши Сервисы
+          </div>
+          <ul class="footer__item-text">
+            <li>
+              Переговоры с оппонентами туриста
+            </li>
+            <li>
+              Претензионно-административный порядок судебный порядок
+            </li>
+            <li>
+              Оперативная юридическая помощь за рубежом
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <div class="footer__item-title">
+            Типичные нарушения прав туриста
+          </div>
+          <ul class="footer__item-text">
+            <li>
+              Задержка или перенос времени вылета
+            </li>
+            <li>
+              Изменение условий проживания туриста
+            </li>
+            <li>
+              Несоответствие положений договора с туристом действующему законодательству
+            </li>
+            <li>
+              Отказ в оплате медицинской помощи
+            </li>
+            <li>
+              Причинение вреда жизни и здоровью туриста
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-xl-3 ml-xl-auto ">
+        <a href="#" class="btn">Получить помощь</a>
+      </div>
+    </div>
+    <div class="footer__bottom row justify-content-between">
+      <div class="social col-12 col-sm-auto ">
+        <a href="#">
+          <img src="images/icons/social-vk.png" alt="">
+        </a>
+        <a href="#">
+          <img src="images/icons/social-facebook.png" alt="">
+        </a>
+        <a href="#">
+          <img src="images/icons/social-twit.png" alt="">
+        </a>
+        <a href="#">
+          <img src="images/icons/social-youtube.png" alt="">
+        </a>
+      </div>
+      <div class="namber col-12 col-sm-auto">
+        <a href="tel:88002506860" class="tel">
+          8 800 250 68 60
+        </a>
+        Звонок по  всему миру бесплатный
+      </div>
+    </div>
+  </div>
+</footer> 
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>progect</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+<div class="preloader">
+    <div class="lds-spinner">
+      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    </div>
+  </div>
+
+<header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-1">
+          <select class='languages'>
+         <option>RU</option>
+         <option>EN</option>
+         <option>DE</option>
+         <option>ZH</option>
+         <option>IT</option>
+         <option>TA</option>
+          </select>
+        </div>
+
+        <a href='#' class="col  ml-auto search-block">
+          <input type="search" class="search-input">
+          <img class="search-icon" src="images/icons/search-icon.svg" alt="">
+        </a>
+        <a href="login.html" class="col-2 col-sm-1 accont-icon align-items-right open-popup">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 3C11.66 3 13 4.34 13 6C13 7.66 11.66 9 10 9C8.34 9 7 7.66 7 6C7 4.34 8.34 3 10 3ZM10 17.2C7.5 17.2 5.29 15.92 4 13.98C4.03 11.99 8 10.9 10 10.9C11.99 10.9 15.97 11.99 16 13.98C14.71 15.92 12.5 17.2 10 17.2Z" fill="white"/>
+          </svg>
+        </a>
+        <div class="col-auto  col-none align-items-right">
+          <a href="login.html" class="login before-icon open-popup">
+            Войти в  Личный кабинет
+          </a>
+        </div>
+        <div class="col-auto  col-none align-items-right">
+          <a href="registration.html"  class="registration before-icon open-popup">
+            Регистрация
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <a href="index.html" class="col-5 col-sm-2 header__logo header__logo-sm">
+          <img src="images/logo.svg" alt="">
+        </a>
+        <a href="login.html" class="col-2 col-sm-1 accont-icon align-items-right open-popup ml-auto">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 3C11.66 3 13 4.34 13 6C13 7.66 11.66 9 10 9C8.34 9 7 7.66 7 6C7 4.34 8.34 3 10 3ZM10 17.2C7.5 17.2 5.29 15.92 4 13.98C4.03 11.99 8 10.9 10 10.9C11.99 10.9 15.97 11.99 16 13.98C14.71 15.92 12.5 17.2 10 17.2Z" fill="#2181F1"/>
+          </svg>
+        </a>
+        <div class="header__menu-btn col-2 col-sm-1">
+          <span></span>
+        </div>
+        <div class="header__menu col ">
+          <ul>
+            <li>
+              <a href="#">
+                О нас
+              </a>
+            </li>
+            <li class="drop-down-open">
+              <div>
+                наши проекты
+              </div>
+              <svg class="arrow-bottom" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.59 0.589844L6 5.16984L1.41 0.589844L0 1.99984L6 7.99984L12 1.99984L10.59 0.589844Z" />
+              </svg>
+
+            </li>
+            <li>
+              <a href="#">
+                партнёры
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                контакты
+              </a>
+            </li>
+          </ul>
+          <ul class="account-ul">
+            <li>
+              <div class="login before-icon open-popup">
+                Войти 
+              </div>
+            </li>
+            <li>
+              <div class="registration before-icon open-popup">
+                Регистрация
+              </div>
+            </li>
+            <li>
+              <div class="registration">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.99 0C4.47 0 0 4.48 0 10C0 15.52 4.47 20 9.99 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 9.99 0ZM16.92 6H13.97C13.65 4.75 13.19 3.55 12.59 2.44C14.43 3.07 15.96 4.35 16.92 6ZM10 2.04C10.83 3.24 11.48 4.57 11.91 6H8.09C8.52 4.57 9.17 3.24 10 2.04ZM2.26 12C2.1 11.36 2 10.69 2 10C2 9.31 2.1 8.64 2.26 8H5.64C5.56 8.66 5.5 9.32 5.5 10C5.5 10.68 5.56 11.34 5.64 12H2.26ZM3.08 14H6.03C6.35 15.25 6.81 16.45 7.41 17.56C5.57 16.93 4.04 15.66 3.08 14ZM6.03 6H3.08C4.04 4.34 5.57 3.07 7.41 2.44C6.81 3.55 6.35 4.75 6.03 6ZM10 17.96C9.17 16.76 8.52 15.43 8.09 14H11.91C11.48 15.43 10.83 16.76 10 17.96ZM12.34 12H7.66C7.57 11.34 7.5 10.68 7.5 10C7.5 9.32 7.57 8.65 7.66 8H12.34C12.43 8.65 12.5 9.32 12.5 10C12.5 10.68 12.43 11.34 12.34 12ZM12.59 17.56C13.19 16.45 13.65 15.25 13.97 14H16.92C15.96 15.65 14.43 16.93 12.59 17.56ZM14.36 12C14.44 11.34 14.5 10.68 14.5 10C14.5 9.32 14.44 8.66 14.36 8H17.74C17.9 8.64 18 9.31 18 10C18 10.69 17.9 11.36 17.74 12H14.36Z" fill="#2181F1"/>
+                </svg>
+                Выбор языка: РУССКИЙ
+              </div>
+            </li>
+            <li>
+              <div class="registration">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.5 11H11.71L11.43 10.73C12.41 9.59 13 8.11 13 6.5C13 2.91 10.09 0 6.5 0C2.91 0 0 2.91 0 6.5C0 10.09 2.91 13 6.5 13C8.11 13 9.59 12.41 10.73 11.43L11 11.71V12.5L16 17.49L17.49 16L12.5 11ZM6.5 11C4.01 11 2 8.99 2 6.5C2 4.01 4.01 2 6.5 2C8.99 2 11 4.01 11 6.5C11 8.99 8.99 11 6.5 11Z" fill="#2181F1"/>
+                </svg>
+                поиск
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-red">
+            получить помощь
+          </a>
+          <ul class="drop-down">
+            <svg class="popup-close-arrow drop-down-close" width="16" height="8" viewBox="0 0 16 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.99 5L16 5L16 3L3.99 3L3.99 -1.04995e-06L3.49691e-07 4L3.99 8L3.99 5Z" fill="#2181F1"/>
+            </svg>
+            <li class="drop-down-2-open">
+              <a href="#">
+               Цифровой адвокат
+             </a>
+           </li>
+           <ul class="drop-down-2">
+             <li>
+               <a href="#">
+                Туристический омбудсмен
+              </a>
+            </li>
+            <li>
+             <a href="#">
+              Служба обеспечения деятельности туристического омбудсмена
+            </a>
+          </li>
+          <li>
+           <a href="#">
+            Группа медиаторов
+          </a>
+        </li>
+      </ul>
+      <li>
+        <a href="#">
+         ответственный путешественник
+       </a>
+     </li>
+     <li>
+      <a href="#">
+       национальный туристический рейтинг
+     </a>
+   </li>
+ </ul>
+</div>
+<a href="#" class="btn btn-red">
+  получить помощь
+</a>
+</div>
+</div>
+</div>
+</header>
+<div class="comand page-blue">
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul class="breadcrumbs__list">
+        <li><a href="index.html" id="abtn">Главная </a></li>
+        <li><a href="#" id="bbtn">Наши проекты</a></li>
+        <li><a href="#" id="bbtn">Туристический омбудсмен</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="problems">
+    <div class="container">
+      <h1 class="title-500 mb-40">
+        Туристический омбудсмен
+      </h1>
+      <div class="swiper-container">
+        <div class="swiper-wrapper row">
+          <div class="col-12 col-md-4 swiper-slide">
+            <div class="problems__item">
+              <div class="problems__item-content">
+                <p class="problems__item-subtitle">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 13L10 9V5.82C11.16 5.4 12 4.3 12 3C12 1.34 10.66 0 9 0C7.34 0 6 1.34 6 3C6 4.3 6.84 5.4 8 5.82V9L4 13H0V18H5V14.95L9 10.75L13 14.95V18H18V13H14Z" fill="#FF3434"/>
+                  </svg>
+                  официально
+                </p>
+                <h4 class="problems__item-title">
+                  Выборы омбудсмена
+                </h4>
+                <p class="problems__item-text">
+                Омбудсмены избираются профильными общественными объединениями по согласованию с общественными советами Ростуризма и Росавиации. Список объединений рекомендуется общественными советами Ростуризма и Росавиации.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 swiper-slide">
+            <div class="problems__item">
+              <div class="problems__item-content">
+                <p class="problems__item-subtitle">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.77 5.0302L21.17 6.43019L8.43 19.1702L2.83 13.5702L4.23 12.1702L8.43 16.3702L19.77 5.0302ZM19.77 2.2002L8.43 13.5402L4.23 9.3402L0 13.5702L8.43 22.0002L24 6.43019L19.77 2.2002Z" fill="#FF3434"/>
+                  </svg>
+                  на практике
+                </p>
+                <h4 class="problems__item-title">
+                  Основная функция
+                </h4>
+                <p class="problems__item-text">
+                Омбудсмены организовывают работу Национальной системы защиты прав туристов и авиапассажиров, осуществляют руководство группой медиаторов, распределяют средства Фонда исполнения решений Группы медиаторов и Третейского суда.                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 swiper-slide">
+            <div class="problems__item">
+              <div class="problems__item-content">
+                <p class="problems__item-subtitle">
+                 <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0 20.0625H4V8.0625H0V20.0625ZM22 9.0625C22 7.9625 21.1 7.0625 20 7.0625H13.69L14.64 2.4925L14.67 2.1725C14.67 1.7625 14.5 1.3825 14.23 1.1125L13.17 0.0625L6.59 6.6525C6.22 7.0125 6 7.5125 6 8.0625V18.0625C6 19.1625 6.9 20.0625 8 20.0625H17C17.83 20.0625 18.54 19.5625 18.84 18.8425L21.86 11.7925C21.95 11.5625 22 11.3225 22 11.0625V9.0625Z" fill="#FF3434"/>
+                </svg>
+                принципиально
+              </p>
+              <h4 class="problems__item-title">
+                Официальная позиция
+              </h4>
+              <p class="problems__item-text">
+              Омбудсмены осуществляют деятельность на безвозмездной основе, в соответствии с Положением об омбудсменах и соглашениями с профильными федеральными органами исполнительной власти              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <div class="staff">
+    <div class="container">
+    <div class="comand-wrapper">
+      <div class="staff__inner">
+        <div class="staff__item row">
+          <div class="col-auto staff__img">
+            <img src="images/content/staff-1.jpg" alt="">
+          </div>
+          <div class="col-12 col-xl-6 staff__name-box">
+          <h1 class="staff__name">
+            Гриб Владислав Валерьевич
+          </h1>
+          <h4 class="staff__position">
+            Туристический омбудсмен
+          </h4>
+          </div>
+          <div class="col-12 col-xl-6 staff__name-text">
+          <p class="staff__text">
+            Туристичесий омбудсмен организовывает работу Национальной системы защиты прав туристов и авиапассажиров, осуществляет руководство группой медиаторов, распределяют средства Фонда исполнения решений Группы медиаторов и Третейского суда.
+          </p>
+          </div>
+        </div>
+        <div class="staff__item row">
+          <div class="col-auto staff__img">
+            <img src="images/content/staff-2.jpg" alt="">
+          </div>
+          <div class="col-12 col-xl-6 staff__name-box">
+          <h1 class="staff__name">
+            Гриб Владислав Валерьевич
+          </h1>
+          <h4 class="staff__position">
+            Туристический омбудсмен
+          </h4>
+          </div>
+          <div class="col-12 col-xl-6 staff__name-text">
+          <p class="staff__text">
+            Туристичесий омбудсмен организовывает работу Национальной системы защиты прав туристов и авиапассажиров, осуществляет руководство группой медиаторов, распределяют средства Фонда исполнения решений Группы медиаторов и Третейского суда.
+          </p>
+          </div>
+        </div>
+        <div class="staff__item row">
+          <div class="col-auto staff__img">
+            <img src="images/content/staff-3.jpg" alt="">
+          </div>
+          <div class="col-12 col-xl-6 staff__name-box">
+          <h1 class="staff__name">
+            Гриб Владислав Валерьевич
+          </h1>
+          <h4 class="staff__position">
+            Туристический омбудсмен
+          </h4>
+          </div>
+          <div class="col-12 col-xl-6 staff__name-text">
+          <p class="staff__text">
+            Туристичесий омбудсмен организовывает работу Национальной системы защиты прав туристов и авиапассажиров, осуществляет руководство группой медиаторов, распределяют средства Фонда исполнения решений Группы медиаторов и Третейского суда.
+          </p>
+          </div>
+        </div>
+        <div class="staff__item row">
+          <div class="col-auto staff__img">
+            <img src="images/content/staff-4.jpg" alt="">
+          </div>
+          <div class="col-12 col-xl-6 staff__name-box">
+          <h1 class="staff__name">
+            Гриб Владислав Валерьевич
+          </h1>
+          <h4 class="staff__position">
+            Туристический омбудсмен
+          </h4>
+          </div>
+          <div class="col-12 col-xl-6 staff__name-text">
+          <p class="staff__text">
+            Туристичесий омбудсмен организовывает работу Национальной системы защиты прав туристов и авиапассажиров, осуществляет руководство группой медиаторов, распределяют средства Фонда исполнения решений Группы медиаторов и Третейского суда.
+          </p>
+          </div> 
+        </div>
+        <div class="staff__item row">
+          <div class="col-auto staff__img">
+            <img src="images/content/staff-5.jpg" alt="">
+          </div>
+          <div class="col-12 col-xl-6 staff__name-box">
+          <h1 class="staff__name">
+            Гриб Владислав Валерьевич
+          </h1>
+          <h4 class="staff__position">
+            Туристический омбудсмен
+          </h4>
+          </div>
+          <div class="col-12 col-xl-6 staff__name-text">
+          <p class="staff__text">
+            Туристичесий омбудсмен организовывает работу Национальной системы защиты прав туристов и авиапассажиров, осуществляет руководство группой медиаторов, распределяют средства Фонда исполнения решений Группы медиаторов и Третейского суда.
+          </p>
+          </div>
+        </div>
+      </div>
+      <div class="comand-nav">
+        <a href="#" class="comand-nav__item ">
+          <p class="comand-nav__title">
+            Цифровой адвокат  
+          </p>
+        </a>
+        <a href="#" class="comand-nav__item active">
+          <p class="comand-nav__title">
+            Туристический Омбудсмен 
+          </p>
+        </a>
+        <a href="#" class="comand-nav__item ">
+          <p class="comand-nav__title">
+            Служба обеспечения деятельности тур. омбудсмена
+          </p>
+        </a>
+        <a href="#" class="comand-nav__item ">
+          <p class="comand-nav__title">
+            Группа медиаторов 
+          </p>
+        </a>
+      </div>
+    </div>
+
+
+      <h3 class="title">
+        Как можно получить помощь: 
+      </h3>
+     <div class="swiper-container-2-0">
+     <div class="swiper-wrapper partners__items row">
+      <div class="col col-md-4 swiper-slide">
+        <div class="partners__item-box">
+          <p class="partners__items-number">01</p>
+          <p class="partners__items-text">
+            Для приобритения услуги Вам необхлдимо зайти на сайт наших компани-партнеров и приобрести необходимый вам пакет услуг, с нужным вам уровнем покрытия 
+          </p>
+        </div>
+      </div>
+      <div class="col col-md-4 swiper-slide">
+        <div class="partners__item-box">
+          <p class="partners__items-number">02</p>
+          <p class="partners__items-text">
+            Оплатив данный пакет вы автоматически получаете регистрацию на нашем портале и также весь спектр услуг, входящий в выбраный вами пакет
+          </p>
+        </div>
+      </div>
+      <div class="col col-md-4 swiper-slide">
+        <div class="partners__item-box">
+          <p class="partners__items-number">03</p>
+          <p class="partners__items-text">
+            В итоге вы получает пакет документов в электронном виде, который гарантируют вам  исполнение всего перечня заявленных в нем услуг 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-pagination-2-0"></div>
+    <div class="row text-and-btn">
+      <div class="col-md-8 f-700">
+        В случае, когда случай требует вовлечения в процесс круга специалистов, ваш запрос отправляется в наш коллегиальный совет — Группу Медиации, в состав которого входят признанные эксперты и крупные специалисты. По итогам их работы вам будет направлено заключение с  дальнейшими шагам для вашего вопроса.
+      </div>
+      <div class="col-md-4 ml-auto">
+        <a href="#" class="btn btn-red big-btn">Подать обращение</a>
+      </div>
+    </div>
+    <div class="faq">
+  <div class="container">
+    <h1 class="title">
+      Часто задаваемые вопросы:
+    </h1>
+    <div class="faq__item">
+      <div class="faq__item-title">
+        В чем отличие вашей организации от любого другого?
+      </div>
+      <p class="faq__item-text">
+        По мнению ведущих маркетологов, медиапланирование программирует сублимированный поведенческий таргетинг, используя опыт предыдущих кампаний. Партисипативное планирование недостижимо. Побочный PR-эффект слабо ускоряет сублимированный бренд. Восприятие марки пока плохо поддерживает медиаплан. 
+      </p>
+      <p class="faq__item-text">
+       Организация п рактического взаимодействия стабилизирует коллективный комплексный анализ ситуации. Рекламный блок, согласно Ф.Котлеру, слабо развивает ролевой показ баннера, полагаясь на инсайдерскую информацию.
+     </p>
+   </div>
+   <div class="faq__item">
+      <div class="faq__item-title">
+        Что такое экспертный совет и в чем его функции?
+      </div>
+      <p class="faq__item-text">
+        По мнению ведущих маркетологов, медиапланирование программирует сублимированный поведенческий таргетинг, используя опыт предыдущих кампаний. Партисипативное планирование недостижимо. Побочный PR-эффект слабо ускоряет сублимированный бренд. Восприятие марки пока плохо поддерживает медиаплан. 
+      </p>
+      <p class="faq__item-text">
+       Организация п рактического взаимодействия стабилизирует коллективный комплексный анализ ситуации. Рекламный блок, согласно Ф.Котлеру, слабо развивает ролевой показ баннера, полагаясь на инсайдерскую информацию.
+     </p>
+   </div>
+   <div class="faq__item">
+      <div class="faq__item-title">
+        Кто будет составлять заявление и отстаивать мои интересы в суде?
+      </div>
+      <p class="faq__item-text">
+        По мнению ведущих маркетологов, медиапланирование программирует сублимированный поведенческий таргетинг, используя опыт предыдущих кампаний. Партисипативное планирование недостижимо. Побочный PR-эффект слабо ускоряет сублимированный бренд. Восприятие марки пока плохо поддерживает медиаплан. 
+      </p>
+      <p class="faq__item-text">
+       Организация п рактического взаимодействия стабилизирует коллективный комплексный анализ ситуации. Рекламный блок, согласно Ф.Котлеру, слабо развивает ролевой показ баннера, полагаясь на инсайдерскую информацию.
+     </p>
+   </div>
+   <div class="faq__item">
+      <div class="faq__item-title">
+        Есть ли возможность расширить пакет страховки?
+      </div>
+      <p class="faq__item-text">
+        По мнению ведущих маркетологов, медиапланирование программирует сублимированный поведенческий таргетинг, используя опыт предыдущих кампаний. Партисипативное планирование недостижимо. Побочный PR-эффект слабо ускоряет сублимированный бренд. Восприятие марки пока плохо поддерживает медиаплан. 
+      </p>
+      <p class="faq__item-text">
+       Организация п рактического взаимодействия стабилизирует коллективный комплексный анализ ситуации. Рекламный блок, согласно Ф.Котлеру, слабо развивает ролевой показ баннера, полагаясь на инсайдерскую информацию.
+     </p>
+   </div>
+   <div class="faq__item">
+      <div class="faq__item-title">
+        В каких странах будет работать ваша система страхования?
+      </div>
+      <p class="faq__item-text">
+        По мнению ведущих маркетологов, медиапланирование программирует сублимированный поведенческий таргетинг, используя опыт предыдущих кампаний. Партисипативное планирование недостижимо. Побочный PR-эффект слабо ускоряет сублимированный бренд. Восприятие марки пока плохо поддерживает медиаплан. 
+      </p>
+      <p class="faq__item-text">
+       Организация п рактического взаимодействия стабилизирует коллективный комплексный анализ ситуации. Рекламный блок, согласно Ф.Котлеру, слабо развивает ролевой показ баннера, полагаясь на инсайдерскую информацию.
+     </p>
+   </div>  
+  </div>
+</div>
+<div class="materials">
+  <h1 class="title">
+    Публичные материалы: 
+  </h1>
+  <div class="swiper-container-2-1">
+    <div class="row swiper-wrapper">
+      <div class="col-md-4 swiper-slide">
+        <div class="materials-item">
+          <img src="images/icons/pdf.png" alt="">
+          <h4 class="materials-item-text">
+            Устав Всероссийского объединения туристов
+          </h4>
+          <a href="#" download class="btn btn-red big-btn">Скачать</a>
+        </div>
+      </div>
+      <div class="col-md-4 swiper-slide">
+        <div class="materials-item">
+          <img src="images/icons/pdf.png" alt="">
+          <h4 class="materials-item-text">
+           Свидетельство о постановке на учет Всероссийского объединения туристов
+         </h4>
+         <a href="#" download class="btn btn-red big-btn">Скачать</a>
+       </div>
+     </div>
+     <div class="col-md-4 swiper-slide">
+      <div class="materials-item">
+        <img src="images/icons/pdf.png" alt="">
+        <h4 class="materials-item-text">
+          Свидетельство о гос. регистрации Всероссийского объединения туристов
+        </h4>
+        <a href="#" download class="btn btn-red big-btn">Скачать</a>
+      </div>
+    </div>
+  </div>
+</div>
+ <div class="swiper-pagination-2-0"></div>
+</div>
+ <!-- </div> -->
+  </div>
+</div>
+
+
+<div class="feedback">
+  <div class="container">
+    <h1 class="title">
+      Хотите быть в курсе свежих новостей и актуальной информации?
+    </h1>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <p class="feedback-text">
+          Если вы хотите быть в курсе последних новостей, изменений в законодательстве, наших акциях и предложениях — подпишитесь на нашу рассылку.
+          <span>Мы будем отправлять вам только самую актуальную и проверенную информацию о  защите ваших интересов, деятельности туристического омбудсмена и наших проектов. </span>
+        </p>
+
+      </div>
+      <div class="col-12 col-sm-8 col-md-6">
+         <input class="feedback-input" type="text" placeholder="Оставьте ваш email">
+         <input class="feedback-input feedback-input-sm" type="text" placeholder="Ваш email">
+         <p class="personal">
+           Нажимая на кнопку вы даете свое согласие на обработку ваших персональных данных
+         </p>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<footer class="footer">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-12 col-xl-4 ">
+        <div class="footer__item">
+          <a href="index.html" class="footer-logo">
+          <img src="images/footer-logo.svg" alt="">
+          </a>
+          <p class="footer__item-text">
+            © 2019 Все права защищены. 
+          </p>
+          <p class="footer__item-text">
+            Использование любых материалов только с согласия правообладателя
+          </p>
+        </div>
+        <div class="footer__item">
+          <div class="gerb">
+          <img class="gerb-img" src="images/gerb.svg" alt="">
+          </div>
+          <div class="footer__item-title">
+            При поддержке:
+          </div>
+          <p class="footer__item-name">
+            ФЕДЕРАЛЬНОГО АГЕНТСТВО ПО ТУРИЗМУ
+          </p>
+          <p class="footer__item-name">
+            Министерство экономического развития Российской Федерации
+          </p>
+        </div>
+      </div>
+      <div class="col col-lg-4 col-center ml-xl-auto">
+        <div class="footer__item">
+          <div class="footer__item-title">
+            наши Сервисы
+          </div>
+          <ul class="footer__item-text">
+            <li>
+              Переговоры с оппонентами туриста
+            </li>
+            <li>
+              Претензионно-административный порядок судебный порядок
+            </li>
+            <li>
+              Оперативная юридическая помощь за рубежом
+            </li>
+          </ul>
+        </div>
+        <div class="footer__item">
+          <div class="footer__item-title">
+            Типичные нарушения прав туриста
+          </div>
+          <ul class="footer__item-text">
+            <li>
+              Задержка или перенос времени вылета
+            </li>
+            <li>
+              Изменение условий проживания туриста
+            </li>
+            <li>
+              Несоответствие положений договора с туристом действующему законодательству
+            </li>
+            <li>
+              Отказ в оплате медицинской помощи
+            </li>
+            <li>
+              Причинение вреда жизни и здоровью туриста
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-xl-3 ml-xl-auto ">
+        <a href="#" class="btn">Получить помощь</a>
+      </div>
+    </div>
+    <div class="footer__bottom row justify-content-between">
+      <div class="social col-12 col-sm-auto ">
+        <a href="#">
+          <img src="images/icons/social-vk.png" alt="">
+        </a>
+        <a href="#">
+          <img src="images/icons/social-facebook.png" alt="">
+        </a>
+        <a href="#">
+          <img src="images/icons/social-twit.png" alt="">
+        </a>
+        <a href="#">
+          <img src="images/icons/social-youtube.png" alt="">
+        </a>
+      </div>
+      <div class="namber col-12 col-sm-auto">
+        <a href="tel:88002506860" class="tel">
+          8 800 250 68 60
+        </a>
+        Звонок по  всему миру бесплатный
+      </div>
+    </div>
+  </div>
+</footer> 
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
